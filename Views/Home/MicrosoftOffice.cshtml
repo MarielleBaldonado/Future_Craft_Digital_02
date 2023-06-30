@@ -3,48 +3,96 @@
     ViewBag.Title = "Microsoft Office";
 }
 
-<div class="office-banner">
+@Styles.Render("~/Content/Site.css")
+
     <div class="main-container">
         <h6>Microsoft Office</h6>
-        <table class="microsoftOfficeTbl">
-            <tr>
-                <th></th>
-                <th></th>
-                <th class="data-3"> <h6>Reviews</h6> </th>
-            </tr>
-            <tr class="row-2">
-                <td class="data-1"><img src="../assets/img/shop-image/software/office-365.png" alt="Image Of Microsoft Office 365 Professional Plus" /></td>
-                <td class="data-2"><a class="link" href="#">Microsoft Office 365 Professional Plus For 15 Devices</a></td>
-                <td class="data-3"><p>N/A</p></td>
-            </tr>
-            <tr class="row-3">
-                <td class="data-1"><img src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office 365 Professional 2021" /></td>
-                <td class="data-2"><a class="link" href="#">Microsoft Office Professional Plus 2021</a></td>
-                <td class="data-3"><p>N/A</p></td>
-            </tr>
-            <tr class="row-4">
-                <td class="data-1"><img src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office Home and Business 2021" /></td>
-                <td class="data-2"><a class="link" href="#">Microsoft Office Home and Business 2021</a></td>
-                <td class="data-3"><p>N/A</p></td>
-            </tr>
-            <tr class="row-5">
-                <td class="data-1"><img src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office Professional Plus 2019" /></td>
-                <td class="data-2"><a class="link" href="#">Microsoft Office Professional Plus 2019</a></td>
-                <td class="data-3"><p>N/A</p></td>
-            </tr>
-            <tr class="row-6">
-                <td class="data-1"><img src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office Home and Business 2019" /></td>
-                <td class="data-2"><a class="link" href="#">Microsoft Office Home and Business 2019</a></td>
-                <td class="data-3"><p>N/A</p></td>
-            </tr>
-            <tr class="row-7">
-                <td class="data-1"><img src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office Professional Plus 2016" /></td>
-                <td class="data-2"><a class="link" href="#">Microsoft Office Professional Plus 2016</a></td>
-                <td class="data-3"><p>N/A</p></td>
-            </tr>
-        </table>
+        <div class="software-container">
+            @* Microsoft Office 365 Professional Plus *@
+            <div class="hover-effect">
+                <div class="software-card">
+                    <div class="software-img">
+                        <img src="../assets/img/shop-image/software/office-365.png" alt="Image Of Microsoft Office 365 Professional Plus" />
+                    </div>
+                    <div class="software-content">
+                        <h3 class="software-title"><a class="link" href="#">Microsoft Office 365 Professional Plus </a></h3>
+                        <p class="software-description">Large enterprises that need advanced collaboration, database management, and desktop publishing capabilities.</p>
+                        <span class="software-price">Price</span>
+                    </div>
+                </div>
+                <span class="software-price-button show"><button>Add to Cart</button></span>
+            </div>
+            @* Microsoft Office Professional Plus 2021 *@
+            <div class="hover-effect">
+                <div class="software-card">
+                    <div class="software-img">
+                        <img src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office Professional Plus 2021" />
+                    </div>
+                    <div class="software-content">
+                        <h3 class="software-title"><a class="link" href="#">Microsoft Office Professional Plus 2021</a></h3>
+                        <p class="software-description">Office Professional 2021 is for growing small businesses who want the classic Office apps plus Outlook, Publisher, and Access.Footnote1 A one-time purchase installed on 1 PC for use at work.</p>
+                        <span class="software-price">Price</span>
+                    </div>
+                </div>
+                <span class="software-price-button show"><button>Add to Cart</button></span>
+            </div>
+            @* Microsoft Office Home and Business 2021 *@
+            <div class="hover-effect">
+                <div class="software-card">
+                    <div class="software-img">
+                        <img src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office Home and Business 2021" />
+                    </div>
+                    <div class="software-content">
+                        <h3 class="software-title"><a class="link" href="#">Microsoft Office Home and Business 2021</a></h3>
+                        <p class="software-description">Office Home and Business 2021 is for families and small businesses who want classic Office apps and email. It includes Word, Excel, PowerPoint, and Outlook for Windows 11 and Windows 10. A one-time purchase installed on 1 PC or Mac for use at home or work.</p>
+                        <span class="software-price">Price</span>
+                    </div>
+                </div>
+                <span class="software-price-button show"><button>Add to Cart</button></span>
+            </div>
+            @* Microsoft Office Professional Plus 2019 *@
+            <div class="hover-effect">
+                <div class="software-card">
+                    <div class="software-img">
+                        <img src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office Professional Plus 2019" />
+                    </div>
+                    <div class="software-content">
+                        <h3 class="software-title"><a class="link" href="#">Microsoft Office Professional Plus 2019</a></h3>
+                        <p class="software-description">Office Professional Plus 2019 includes Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Word, and Skype for Business.</p>
+                        <span class="software-price">Price</span>
+                    </div>
+                </div>
+                <span class="software-price-button show"><button>Add to Cart</button></span>
+            </div>
+            @* Microsoft Office Home and Business 2019 *@
+            <div class="hover-effect">
+                <div class="software-card">
+                    <div class="software-img">
+                        <img src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office Home and Business 2019" />
+                    </div>
+                    <div class="software-content">
+                        <h3 class="software-title"><a class="link" href="#">Microsoft Office Home and Business 2019</a></h3>
+                        <p class="software-description">Designed for families and small businesses that need traditional office apps and email. It includes Word, Excel, PowerPoint and Outlook for Windows 10.</p>
+                        <span class="software-price">Price</span>
+                    </div>
+                </div>
+                <span class="software-price-button show"><button>Add to Cart</button></span>
+            </div>
+            @* Microsoft Office Professional Plus 2016 *@
+            <div class="hover-effect">
+                <div class="software-card">
+                    <div class="software-img">
+                        <img src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office Professional Plus 2016" />
+                    </div>
+                    <div class="software-content">
+                        <h3 class="software-title"><a class="link" href="#">Microsoft Office Professional Plus 2016</a></h3>
+                        <p class="software-description">Microsoft Office 2016 is a version of the Microsoft Office productivity suite, succeeding both Office 2013 and Office for Mac 2011 and preceding Office 2019, which in turn was succeeded by Office 2021 for both platforms</p>
+                        <span class="software-price">Price</span>
+                    </div>
+                </div>
+                <span class="software-price-button show"><button>Add to Cart</button></span>
+            </div>
+        </div>
     </div>
-</div>
-<div class="office-banner-2"></div>
 
 
