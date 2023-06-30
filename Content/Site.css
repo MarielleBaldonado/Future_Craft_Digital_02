@@ -1,1 +1,63 @@
-﻿
+﻿.software-container {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.hover-effect {
+    position: relative;
+}
+
+.show {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.software-card {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #D1D7DC;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.software-card:hover + .show {
+    display: block;
+}
+
+.software-content {
+    width: 600px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.software-title a {
+    color: #000000;
+    font-size: 0.7em;
+    font-weight: 700;
+}
+
+.software-description {
+    width: 476px;
+    line-height: 20px;
+}
+
+.software-price{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 10px;
+}
+
+.software-price-button button {
+    outline: none;
+    padding: 8px;
+    border: 1px solid transparent;
+    background-color: #00C9B7;
+    font-weight: 600;
+    color: #FFF;
+    border-radius: 20px;
+}

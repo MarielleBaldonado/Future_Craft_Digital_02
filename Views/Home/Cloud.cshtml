@@ -3,21 +3,38 @@
     ViewBag.Title = "Cloud";
 }
 
+@Styles.Render("~/Content/Site.css")
+
+
 <div class="cloud-banner">
     <div class="main-container">
-        <h6>Cloud</h6>
-        <table class="cloudTbl">
-            <tr>
-                <th></th>
-                <th></th>
-                <th class="data-3"> <h6>Reviews</h6> </th>
-            </tr>
-            <tr class="row-2">
-                <td class="data-1"><img src="../assets/img/shop-image/software/adobe-cloud.png" alt="Image Of Adobe Creative Cloud" /></td>
-                <td class="data-2"><a class="link" href="#">Adobe Creative Cloud</a></td>
-                <td class="data-3"><p>N/A</p></td>
-            </tr>
-
-        </table>
+        <div class="software-container">
+            <div class="hover-effect">
+                <div class="software-card">
+                    <div class="software-img">
+                        <img src="../assets/img/shop-image/software/adobe-cloud.png" alt="Image Of Adobe Creative Cloud" />
+                    </div>
+                    <div class="software-content">
+                        <h3 class="software-title"><a class="link" href="#">Adobe Creative Cloud</a></h3>
+                        <p class="software-description">A bundle of more than 20 software applications that creators use to produce visual content for personal or professional use</p>
+                        <span class="software-price">Price</span>
+                    </div>
+                </div>
+                <span class="software-price-button show"><button>Add to Cart</button></span>
+            </div>
+            <div class="hover-effect">
+                <div class="software-card">
+                    <div class="software-img">
+                        <img src="../assets/img/shop-image/software/adobe-cloud.png" alt="Image Of Adobe Creative Cloud" />
+                    </div>
+                    <div class="software-content">
+                        <h3 class="software-title"><a class="link" href="#">Adobe Creative Cloud</a></h3>
+                        <p class="software-description">A bundle of more than 20 software applications that creators use to produce visual content for personal or professional use</p>
+                        <span class="software-price">Price</span>
+                    </div>
+                </div>
+                <span class="software-price-button show"><button>Add to Cart</button></span>
+            </div>
+        </div>
     </div>
 </div>
