@@ -360,6 +360,7 @@
     <Content Include="Views\Home\Software.cshtml" />
     <Content Include="Views\Home\Windows.cshtml" />
     <Content Include="Views\Home\Rental.cshtml" />
+    <Content Include="Views\Home\WebDesign.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
