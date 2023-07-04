@@ -24033,6 +24033,7 @@ label {
 
 .section-title {
     text-align: center;
+    margin-top: 200px;
     margin-bottom: 50px
 }
 
@@ -39135,6 +39136,7 @@ Shop Details CSS
 
 .main-container {
     margin-top: 140px;
+    height: 100vh;
 }
 
 .microsoftWindowsTbl, .microsoftOfficeTbl, .cloudTbl {
