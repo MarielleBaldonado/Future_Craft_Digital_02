@@ -54,5 +54,24 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
+        public ActionResult SEO()
+        {
+            return View();
+        }
+
+        public ActionResult ContentCreation()
+        {
+            return View();
+        }
+
+        public ActionResult DigitalMarketing()
+        {
+            return View();
+        }
+
+        public ActionResult SMM()
+        {
+            return View();
+        }
     }
 }
