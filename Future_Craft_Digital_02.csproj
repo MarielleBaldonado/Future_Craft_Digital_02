@@ -177,6 +177,14 @@
     <Content Include="Assets\img\layer.png" />
     <Content Include="Assets\img\logo2.png" />
     <Content Include="Assets\img\map.png" />
+    <Content Include="Assets\img\marketing\1.png" />
+    <Content Include="Assets\img\marketing\2.png" />
+    <Content Include="Assets\img\marketing\dm.png" />
+    <Content Include="Assets\img\marketing\dm2.png" />
+    <Content Include="Assets\img\marketing\seo.jpg" />
+    <Content Include="Assets\img\marketing\seo1.jpg" />
+    <Content Include="Assets\img\marketing\sm.png" />
+    <Content Include="Assets\img\marketing\sm2.png" />
     <Content Include="Assets\img\partner-img\partner-1.png" />
     <Content Include="Assets\img\partner-img\partner-10.png" />
     <Content Include="Assets\img\partner-img\partner-2.png" />
@@ -361,6 +369,10 @@
     <Content Include="Views\Home\Windows.cshtml" />
     <Content Include="Views\Home\Rental.cshtml" />
     <Content Include="Views\Home\WebDesign.cshtml" />
+    <Content Include="Views\Home\ContentCreation.cshtml" />
+    <Content Include="Views\Home\SMM.cshtml" />
+    <Content Include="Views\Home\DigitalMarketing.cshtml" />
+    <Content Include="Views\Home\SEO.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
