@@ -54,6 +54,10 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
+        public ActionResult Ecommerce()
+        {
+            return View();
+        }
         public ActionResult SEO()
         {
             return View();
