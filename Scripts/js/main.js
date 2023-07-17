@@ -36,22 +36,18 @@ $(document).ready(function () {
 });
 
 // Get references to the tab elements
-const tabs = document.querySelectorAll('#tabs li');
+$(document).ready(function () {
+    $("#tabs li").click(function () {
+        var tabId = $(this).attr("id");
+        $(".content").removeClass("show"); // Hide all content sections
+        $("#" + tabId + "_content").addClass("show"); // Show the corresponding content section
 
-// Get references to the tab content elements
-const tabContents = document.querySelectorAll('.content');
-
-// Add click event listeners to the tabs
-tabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => {
-        // Remove 'active' class from all tabs and add it to the clicked tab
-        tabs.forEach((tab) => tab.classList.remove('active'));
-        tab.classList.add('active');
-
-        // Hide all tab content and display the corresponding content for the clicked tab
-        tabContents.forEach((content) => content.classList.remove('show'));
-        tabContents[index].classList.add('show');
+        $("#tabs li").removeClass("active").addClass("inactive"); // Update tab classes
+        $(this).removeClass("inactive").addClass("active");
     });
+
+    // Set the initial active tab
+    $("#tabs li.active").click();
 });
 
 // Initialize the accordion
