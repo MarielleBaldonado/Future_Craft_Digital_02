@@ -220,7 +220,10 @@
     <Content Include="Assets\img\services-left-image\creative.png" />
     <Content Include="Assets\img\services-left-image\developer.png" />
     <Content Include="Assets\img\services-left-image\flower-top.png" />
+    <Content Include="Assets\img\services-left-image\service-image1.png" />
     <Content Include="Assets\img\services-left-image\service-image4.png" />
+    <Content Include="Assets\img\services-left-image\service-image5.png" />
+    <Content Include="Assets\img\services-left-image\service-image6.png" />
     <Content Include="Assets\img\services-left-image\service-left-main-pic.png" />
     <Content Include="Assets\img\services-left-image\small-monitor.png" />
     <Content Include="Assets\img\services-left-image\small-top.png" />
@@ -374,6 +377,7 @@
     <Content Include="Views\Home\DigitalMarketing.cshtml" />
     <Content Include="Views\Home\SEO.cshtml" />
     <Content Include="Views\Home\Ecommerce.cshtml" />
+    <Content Include="Views\Home\POS.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

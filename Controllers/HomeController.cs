@@ -58,6 +58,10 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
+        public ActionResult POS()
+        {
+            return View();
+        }
         public ActionResult SEO()
         {
             return View();
