@@ -138,6 +138,7 @@
     <Content Include="Assets\img\agency-image\agency-user4.png" />
     <Content Include="Assets\img\agency-image\agency-user5.png" />
     <Content Include="Assets\img\agency-image\agency-user6.png" />
+    <Content Include="Assets\img\banner-bg.jpg" />
     <Content Include="Assets\img\banner-bg1.jpg" />
     <Content Include="Assets\img\banner-image\bin.png" />
     <Content Include="Assets\img\banner-image\book.png" />
@@ -174,6 +175,7 @@
     <Content Include="Assets\img\fcd3.png" />
     <Content Include="Assets\img\fcd4.jpg" />
     <Content Include="Assets\img\footer.png" />
+    <Content Include="Assets\img\free-trial-img.png" />
     <Content Include="Assets\img\layer.png" />
     <Content Include="Assets\img\logo2.png" />
     <Content Include="Assets\img\map.png" />
@@ -185,6 +187,7 @@
     <Content Include="Assets\img\marketing\seo1.jpg" />
     <Content Include="Assets\img\marketing\sm.png" />
     <Content Include="Assets\img\marketing\sm2.png" />
+    <Content Include="Assets\img\ml-main-pic.png" />
     <Content Include="Assets\img\partner-img\partner-1.png" />
     <Content Include="Assets\img\partner-img\partner-10.png" />
     <Content Include="Assets\img\partner-img\partner-2.png" />
@@ -378,6 +381,7 @@
     <Content Include="Views\Home\SEO.cshtml" />
     <Content Include="Views\Home\Ecommerce.cshtml" />
     <Content Include="Views\Home\POS.cshtml" />
+    <Content Include="Views\Home\Outsourcing.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
