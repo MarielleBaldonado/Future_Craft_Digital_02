@@ -40,6 +40,37 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="@Url.Action("Index", "Home")">Home</a>
                                 </li>
+                                <!-- Product Menu Item with Dropdown -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/#">
+                                        Product
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="@Url.Action("Ecommerce", "Home")">
+                                                Ecommerce Website
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="@Url.Action("WebDesign", "Home")">    
+                                                Web Design and Development
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="@Url.Action("POS", "Home")">
+                                                Point of Sale (POS)
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/about-2/">
+                                                Outsourcing Solutions
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
                                 <!-- Services Menu Item with Dropdown -->
                                 <li class="nav-item">
                                     <a class="nav-link" href="/#">
@@ -69,38 +100,27 @@
                                                 <li class="nav-item">
                                                     <a class="nav-link" href="@Url.Action("SMM", "Home")">Social Media Management</a>
                                             </ul>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="@Url.Action("WebDesign", "Home")">
-                                                    Web Design and Development
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="@Url.Action("POS", "Home")">
-                                                    Point of Sale (POS) Design and Development
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="/about-2/">
-                                                    Outsourcing Solutions
-                                                </a>
-                                            </li>
-</li>
+                                        </li>
 
                                     </ul>
                                 </li>
-                                <!-- Product Menu Item with Dropdown -->
+                                <!-- Rental Menu -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("Rental", "Home")">
+                                        Leasing/Rental
+                                    </a>
+                                </li>
+                                <!-- Shop Menu Item with Dropdown -->
                                 <li class="nav-item">
                                     <a class="nav-link" href="/#">
-                                        Product
+                                        Shop
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                             <polyline points="6 9 12 15 18 9"></polyline>
                                         </svg>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="@Url.Action("Ecommerce", "Home")">
-                                                Gym Equipment
-                                            </a>
+                                            <a class="nav-link" href="/about-1/">Gym Equipment</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="@Url.Action("Software", "Home")">
@@ -109,21 +129,36 @@
                                                     <polyline points="9 6 15 12 9 18"></polyline>
                                                 </svg>
                                             </a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="@Url.Action("Windows", "Home")">Microsoft Windows</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="@Url.Action("MicrosoftOffice", "Home")">Microsoft Office</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="@Url.Action("Antivirus", "Home")">Antivirus</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="@Url.Action("Cloud", "Home")">Cloud</a>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
                                 </li>
-
-                                <!-- Rental Menu -->
+                                <!-- Social Media Menu with Dropdown -->
                                 <li class="nav-item">
-                                    <a class="nav-link" href="@Url.Action("Rental", "Home")">
-                                        Real Estate
+                                    <a class="nav-link" href="/#">
+                                        Social Media
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
                                     </a>
-                                </li>
-                                <!-- Blog Menu -->
-                                <li class="nav-item">
-                                    <a class="nav-link" href="@Url.Action("Blog", "Home")">
-                                        Blog
-                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://www.facebook.com/futurecraftdigital" target="_blank">Facebook</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="@Url.Action("About", "Home")">About Us</a>
