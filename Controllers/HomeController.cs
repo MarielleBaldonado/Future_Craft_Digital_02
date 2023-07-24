@@ -62,6 +62,10 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
+        public ActionResult Outsourcing()
+        {
+            return View();
+        }
         public ActionResult SEO()
         {
             return View();
