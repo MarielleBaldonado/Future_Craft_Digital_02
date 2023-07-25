@@ -81,5 +81,24 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
+
+        // -------------- FOR INSIGHTS ---------------------
+
+        public ActionResult Insights()
+        {
+            return View();
+        }
+
+        public ActionResult Blogs()
+        {
+            return View();
+        }
+
+        public ActionResult Testimonials()
+        {
+            return View();
+        }
+
+        // -------------- FOR INSIGHTS ---------------------
     }
 }

@@ -379,6 +379,9 @@
     <Content Include="Views\Home\Ecommerce.cshtml" />
     <Content Include="Views\Home\POS.cshtml" />
     <None Include="Views\Home\.editorconfig" />
+    <Content Include="Views\Home\Blogs.cshtml" />
+    <Content Include="Views\Home\Insights.cshtml" />
+    <Content Include="Views\Home\Testimonials.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
