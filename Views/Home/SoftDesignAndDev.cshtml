@@ -2,21 +2,69 @@
     ViewBag.Title = "SoftDesignAndDev";
 }
 
+<!-- Start Page Title -->
+<div class="page-title-area">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="container">
+                <h1 class="font-weight-bold">Software Design and Development</h1>
+            </div>
+        </div>
+    </div>
 
-<div class="main-container">
+    <div class="shape1"><img src="~/assets/img/shape1.png" alt="shape"></div>
+    <div class="shape2 rotateme"><img src="~/assets/img/shape2.svg" alt="shape"></div>
+    <div class="shape3"><img src="~/assets/img/shape3.svg" alt="shape"></div>
+    <div class="shape4"><img src="~/assets/img/shape4.svg" alt="shape"></div>
+    <div class="shape5"><img src="~/assets/img/shape5.png" alt="shape"></div>
+    <div class="shape6 rotateme"><img src="~/assets/img/shape4.svg" alt="shape"></div>
+    <div class="shape7"><img src="~/assets/img/shape4.svg" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="~/assets/img/shape2.svg" alt="shape"></div>
+</div>
+<!-- End Page Title -->
+
+<!-- Start Page summary  Area -->
+<div class="pageSummary mb-5">
     <div class="container">
-        @* Website and Development Banner *@
-        <div class="ml-main-banner">
-            <div class="container-fluid">
-                <div class="section-title" style="margin-top: 100px">
-                    <h1 class="font-weight-bold">Design and Development Services</h1>
-                    <a class="btn btn-secondary mt-5" href="/contact/">Get Started</a>
+        <div class="d-flex justify-content-center">
+            <div class="row mb-5">
+                <div class="col-lg-6 col-md-12 mt-5 pr-5">
+                    <div class="about-image">
+                        <img src="~/assets/img/about4.png" alt="image">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 pl-5">
+                    <div class="about-content">
+                        <div class="section-title">
+                            <h2>Lorem Ipsum</h2>
+                            <div class="bar"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
 
+    </div>
+</div>
+
+<!-- Website Section-->
+<div id="webSec">
+    <div class="ml-main-section mt-minus-top"  style="background-image: url(/Assets/img/banner-bg.jpg)">
+        @* Website and Development Banner *@
+        <div class="ml-main-banner ">
+            <div class="container-fluid">
+                <div class="section-title" style="margin-top: 100px">
+                    <h1 class="font-weight-bold">Web Design and Development Services</h1>
+                    <a class="btn btn-secondary mt-5" href="/contact/">Get Started</a>
+                </div>
+            </div>
+        </div>
         @* Technology Stack Logo Section *@
-        <div class="ml-partner-area mt-minus-top ptb-80 pb-0">
+        <div class="ml-partner-area mt-minus-top mt-minus-bot">
             <div class="container px-0">
                 <div class="owl-carousel partner-slides owl-carousel owl-theme owl-loaded owl-drag">
                     <div class="owl-stage-outer">
@@ -171,9 +219,35 @@
                 </div>
             </div>
         </div>
+        <div class="shape1">
+            <img src="../assets/img/shape1.png" alt="shape" />
+        </div>
+        <div class="shape2 rotateme">
+            <img src="../assets/img/shape2.svg" alt="shape" />
+        </div>
+        <div class="shape3">
+            <img src="../assets/img/shape3.svg" alt="shape" />
+        </div>
+        <div class="shape4">
+            <img src="../assets/img/shape4.svg" alt="shape" />
+        </div>
+        <div class="shape5">
+            <img src="../assets/img/shape5.png" alt="shape" />
+        </div>
+        <div class="shape6 rotateme">
+            <img src="../assets/img/shape4.svg" alt="shape" />
+        </div>
+        <div class="shape7">
+            <img src="../assets/img/shape4.svg" alt="shape" />
+        </div>
+        <div class="shape8 rotateme">
+            <img src="../assets/img/shape2.svg" alt="shape" />
+        </div>
+    </div>
 
-        @* Key Features *@
-        <div class="solutions-area pb-80">
+    @* Key Features *@
+    <div class="ml-partner-area mt-minus-top" id="webSec">
+        <div class="solutions-area ">
             <div class="container justify-content-center">
                 <div class="section-title">
                     <span class="sub-title">What We Offer</span>
@@ -251,51 +325,9 @@
                 </div>
             </div>
         </div>
-
-        @* Fun Facts Section *@
-        <div class="funfacts-area ptb-80">
-            <div class="container">
-                <div class="section-title">
-                    <h2>We always try to understand users expectation</h2>
-                    <div class="bar"></div>
-                    <p>By prioritizing user expectations, Future Craft Digital can create products, services, or experiences that align with user needs, resulting in enhanced satisfaction, engagement, and usability.</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-12">
-                        <div class="funfact">
-                            <h3>20K</h3>
-                            <p>Feedback</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-12">
-                        <div class="funfact">
-                            <h3>500+</h3>
-                            <p>Workers</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-12">
-                        <div class="funfact">
-                            <h3>70+</h3>
-                            <p>Contributors</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-cta-box">
-                    <h3>Have any question about us?</h3>
-                    <p>Don't hesitate to contact us</p>
-                    <a class="btn btn-primary" href="/contact/">Contact Us</a>
-                </div>
-                <div class="map-bg">
-                    <img src="~/Assets/img/map.png" alt="map">
-                </div>
-            </div>
-        </div>
-    </div> 
-
-
-
+    </div>
     <div class="shape1">
-        <img src="../assets/img/shape1.png" alt="shape" />  
+        <img src="../assets/img/shape1.png" alt="shape" />
     </div>
     <div class="shape2 rotateme">
         <img src="../assets/img/shape2.svg" alt="shape" />
@@ -317,5 +349,383 @@
     </div>
     <div class="shape8 rotateme">
         <img src="../assets/img/shape2.svg" alt="shape" />
+    </div>
+</div>
+<!-- End of Website section-->
+
+
+<!-- Start of Ecommerce Section-->
+<div class="ml-main-section" id="ecomSec" style="background-image: url(/Assets/img/banner-bg.jpg)">
+    @* Ecommerce Banner *@
+    <div class="ml-main-banner">
+        <div class="container-fluid">
+            <div class="section-title" style="margin-top: 100px">
+                <h1 class="font-weight-bold">Ecommerce System <br /> Design and Development Services</h1>
+                <a class="btn btn-secondary mt-5" href="/contact/">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    @* Services Section *@
+    <div class="">
+        <div class="container">
+            <div class="row justify-content-center">
+                @* Mobile App Development *@
+                <div class="col-lg-6 col-sm-6">
+                    <div class="single-ml-services-box">
+                        <div class="image">
+                            <img src="~/Assets/img/services-left-image/service-image6.png" alt="image">
+                        </div>
+                        <h3><a href="/service-details/">Mobile App Development</a></h3>
+                        <p>Highlights the ability to create engaging and user-friendly mobile applications for iOS and Android platforms.</p>
+                    </div>
+                </div>
+                @* E-commerce Solutions *@
+                <div class="col-lg-6 col-sm-6">
+                    <div class="single-ml-services-box">
+                        <div class="image">
+                            <img src="~/Assets/img/services-left-image/service-image1.png" alt="image">
+                        </div>
+                        <h3><a href="/service-details/">E-commerce Solutions</a></h3>
+                        <p>Emphasizes the expertise in building robust e-commerce platforms with features like secure payment gateways and inventory management.</p>
+                    </div>
+                </div>
+                @* Data Analytics *@
+                <div class="col-lg-6 col-sm-6">
+                    <div class="single-ml-services-box">
+                        <div class="image">
+                            <img src="~/Assets/img/services-left-image/service-image5.png" alt="image">
+                        </div>
+                        <h3><a href="/service-details/">Data Analytics</a></h3>
+                        <p>Focuses on helping businesses gain valuable insights from their data for informed decision-making.</p>
+                    </div>
+                </div>
+                @* Cybersecurity *@
+                <div class="col-lg-6 col-sm-6">
+                    <div class="single-ml-services-box">
+                        <div class="image">
+                            <img src="~/Assets/img/services-left-image/service-image4.png" alt="image">
+                        </div>
+                        <h3><a href="/service-details/">Cybersecurity</a></h3>
+                        <p>Highlights comprehensive cybersecurity solutions to protect businesses from potential threats and safeguard their data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @* Projects Section *@
+    <div class="container pb-80">
+        <div class="justify-content-center text-center">
+            <div class="section-title" style="margin-top: 80px;">
+                <h2>Our Portfolio</h2>
+                <p>Take a look at some of our successfully launched e-commerce websites.</p>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                @* Project 1 *@
+                <div class="col-lg-3 col-sm-6 col-md-6">
+                    <div class="single-ml-projects-box">
+                        <img src="~/Assets/img/projects-img1.jpg" alt="image">
+                        <div class="plus-icon">
+                            <a href="/project-details/"><span></span></a>
+                        </div>
+                    </div>
+                </div>
+                @* Project 2 *@
+                <div class="col-lg-3 col-sm-6 col-md-6">
+                    <div class="single-ml-projects-box">
+                        <img src="~/Assets/img/projects-img2.jpg" alt="image">
+                        <div class="plus-icon">
+                            <a href="/project-details/"><span></span></a>
+                        </div>
+                    </div>
+                </div>
+                @* Project 3 *@
+                <div class="col-lg-3 col-sm-6 col-md-6">
+                    <div class="single-ml-projects-box">
+                        <img src="~/Assets/img/projects-img3.jpg" alt="image">
+                        <div class="plus-icon">
+                            <a href="/project-details/"><span></span></a>
+                        </div>
+                    </div>
+                </div>
+                @* Project 4 *@
+                <div class="col-lg-3 col-sm-6 col-md-6">
+                    <div class="single-ml-projects-box">
+                        <img src="~/Assets/img/projects-img4.jpg" alt="image">
+                        <div class="plus-icon">
+                            <a href="/project-details/"><span></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Feedback Section *@
+    <div class="feedback-area ptb-80 ">
+        <div class="container">
+            <div class="owl-carousel agency-portfolio-feedback-slides owl-carousel owl-theme owl-loaded owl-drag">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage" style="transform: translate3d(-1460px, 0px, 0px); transition: all 1s ease 0s; width: 2190px;">
+                        <div class="owl-item" style="width: 730px;">
+                            <div class="agency-portfolio-feedback-item">
+                                <img src="~/Assets/img/client-image/client1.jpg" alt="image">
+                                <p>
+                                    Pellentesque sed purus eu urna vulputate interdum quis sit amet sapien. Pellentesque porta mauris at orci sagittis commodo. Curabitur aliquam nibh odio, vel ornare nisl volutpat quis. Maecenas congue dapibus lacus id fringilla. Vestibulum id augue massa. Proin sed neque dapibus, vulputate ligula eget, aliquam eros.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 730px;">
+                            <div class="agency-portfolio-feedback-item">
+                                <img src="~/Assets/img/client-image/client2.jpg" alt="image">
+                                <p>
+                                    Pellentesque sed purus eu urna vulputate interdum quis sit amet sapien. Pellentesque porta mauris at orci sagittis commodo. Curabitur aliquam nibh odio, vel ornare nisl volutpat quis. Maecenas congue dapibus lacus id fringilla. Vestibulum id augue massa. Proin sed neque dapibus, vulputate ligula eget, aliquam eros.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="owl-item active" style="width: 730px;">
+                            <div class="agency-portfolio-feedback-item">
+                                <img src="~/Assets/img/client-image/client3.jpg" alt="image">
+                                <p>
+                                    Pellentesque sed purus eu urna vulputate interdum quis sit amet sapien. Pellentesque porta mauris at orci sagittis commodo. Curabitur aliquam nibh odio, vel ornare nisl volutpat quis. Maecenas congue dapibus lacus id fringilla. Vestibulum id augue massa. Proin sed neque dapibus, vulputate ligula eget, aliquam eros.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-nav disabled">
+                    <div class="owl-prev">prev</div>
+                    <div class="owl-next">next</div>
+                </div>
+                <div class="owl-dots">
+                    <div class="owl-dot"><span></span></div>
+                    <div class="owl-dot"><span></span></div>
+                    <div class="owl-dot active"><span></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="shape1">
+        <img src="../assets/img/shape1.png" alt="shape" />
+    </div>
+    <div class="shape2 rotateme">
+        <img src="../assets/img/shape2.svg" alt="shape" />
+    </div>
+    <div class="shape3">
+        <img src="../assets/img/shape3.svg" alt="shape" />
+    </div>
+    <div class="shape4">
+        <img src="../assets/img/shape4.svg" alt="shape" />
+    </div>
+    <div class="shape5">
+        <img src="../assets/img/shape5.png" alt="shape" />
+    </div>
+    <div class="shape6 rotateme">
+        <img src="../assets/img/shape4.svg" alt="shape" />
+    </div>
+    <div class="shape7">
+        <img src="../assets/img/shape4.svg" alt="shape" />
+    </div>
+    <div class="shape8 rotateme">
+        <img src="../assets/img/shape2.svg" alt="shape" />
+    </div>
+</div>
+<!-- End of Ecommerce Section-->
+
+
+
+
+<!-- Start of POS Section -->
+<div class="posSection">
+    <div class="ml-main-section" id="POSsec" style="background-image: url(/Assets/img/banner-bg.jpg)">
+        @* POS Banner *@
+        <div class="ml-main-banner">
+            <div class="container-fluid">
+                <div class="section-title" style="margin-top: 100px">
+                    <h1 class="font-weight-bold">Point of Sales <br /> Design and Development Services</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="ml-banner-content">
+                        <h1>Efficient Point of Sale Solutions for Your Business</h1>
+                        <p>We offer cutting-edge point-of-sale solutions tailored to meet the unique needs of your business. Our feature-rich POS system provides you with the tools you need to streamline your operations, increase sales, and enhance customer experiences.</p>
+                        <a class="btn btn-secondary" href="/contact/">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="ml-banner-image" style="top: 0;">
+                        <img src="~/Assets/img/ml-main-pic.png" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shape1">
+            <img src="../assets/img/shape1.png" alt="shape" />
+        </div>
+        <div class="shape2 rotateme">
+            <img src="../assets/img/shape2.svg" alt="shape" />
+        </div>
+        <div class="shape3">
+            <img src="../assets/img/shape3.svg" alt="shape" />
+        </div>
+        <div class="shape4">
+            <img src="../assets/img/shape4.svg" alt="shape" />
+        </div>
+        <div class="shape5">
+            <img src="../assets/img/shape5.png" alt="shape" />
+        </div>
+        <div class="shape6 rotateme">
+            <img src="../assets/img/shape4.svg" alt="shape" />
+        </div>
+        <div class="shape7">
+            <img src="../assets/img/shape4.svg" alt="shape" />
+        </div>
+        <div class="shape8 rotateme">
+            <img src="../assets/img/shape2.svg" alt="shape" />
+        </div>
+    </div>
+
+    @* About Our POS System *@
+    <div class="services-area ptb-80 ">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-12 services-content">
+                    <div class="section-title" style="margin-top: 0;">
+                        <h2>About Our Point of Sale Solutions</h2>
+                        <div class="bar"></div>
+                        <p>Our point-of-sale solutions are designed to be user-friendly and scalable, making it easy for businesses of all sizes to manage their sales efficiently. Our POS system provides a range of features, including:</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                </svg>
+                                Inventory Management
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                </svg>
+                                Sales Processing
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                                    <polyline points="13 2 13 9 20 9"></polyline>
+                                </svg>
+                                Customer Management
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                    <polyline points="17 6 23 6 23 12"></polyline>
+                                </svg>
+                                Reporting and Analytics
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                                Integration
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                                Security
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <img src="~/Assets/img/about-one.png" alt="main-pic">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Free Trial Section *@
+    <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12">
+            <div class="free-trial-image">
+                <img src="~/Assets/img/free-trial-img.png" alt="image">
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12">
+            <div class="free-trial-content">
+                <h2>Start your free trial</h2>
+                <form class="newsletter-form">
+                    <input type="email" class="input-newsletter" placeholder="Enter your business email here">
+                    <button type="submit">Sign Up Free</button>
+                </form>
+                <p>Test out the Machine Learning features for 14 days, no credit card required.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of POS Section -->
+
+<!-- Queries -->
+<div class="funfacts-area ptb-80 mt-15 mt-md-15 mb-5">
+    <div class="container">
+        <div class="section-title">
+            <h2>We always try to understand users expectation</h2>
+            <div class="bar"></div>
+            <p>By prioritizing user expectations, Future Craft Digital can create products, services, or experiences that align with user needs, resulting in enhanced satisfaction, engagement, and usability.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="funfact">
+                    <h3>20K</h3>
+                    <p>Feedback</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="funfact">
+                    <h3>500+</h3>
+                    <p>Workers</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="funfact">
+                    <h3>70+</h3>
+                    <p>Contributors</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-cta-box">
+            <h3>Have any question about us?</h3>
+            <p>Don't hesitate to contact us</p>
+            <a class="btn btn-primary" href="/contact/">Contact Us</a>
+        </div>
+        <div class="map-bg">
+            <img src="~/Assets/img/map.png" alt="map">
+        </div>
     </div>
 </div>
