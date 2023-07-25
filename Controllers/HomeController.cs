@@ -20,6 +20,26 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        public ActionResult Services()
+        {
+            return View();
+        }
+
+        public ActionResult Marketing()
+        {
+            return View();
+        }
+
+        public ActionResult SoftDesignAndDev()
+        {
+            return View();
+        }
+
+        public ActionResult Outsourcing()
+        {
+            return View();
+        }
+
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
@@ -42,44 +62,11 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        public ActionResult Cloud()
-        {
-            return View();
-        }
+       
         public ActionResult Rental()
         {
             return View();
         }
-        public ActionResult WebDesign()
-        {
-            return View();
-        }
-        public ActionResult Ecommerce()
-        {
-            return View();
-        }
-        public ActionResult POS()
-        {
-            return View();
-        }
-        public ActionResult SEO()
-        {
-            return View();
-        }
 
-        public ActionResult ContentCreation()
-        {
-            return View();
-        }
-
-        public ActionResult DigitalMarketing()
-        {
-            return View();
-        }
-
-        public ActionResult SMM()
-        {
-            return View();
-        }
     }
 }
