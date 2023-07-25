@@ -40,9 +40,10 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="@Url.Action("Index", "Home")">Home</a>
                                 </li>
+
                                 <!-- Services Menu Item with Dropdown -->
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/#">
+                                    <a class="nav-link" href="@Url.Action("Index", "Home")#servicesSummary">
                                         Services
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                             <polyline points="6 9 12 15 18 9"></polyline>
@@ -50,7 +51,7 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/it-startup/">
+                                            <a class="nav-link" href="@Url.Action("Marketing", "Home")">
                                                 Marketing
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                                     <polyline points="9 6 15 12 9 18"></polyline>
@@ -58,39 +59,47 @@
                                             </a>
                                             <ul class="dropdown-menu">
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="@Url.Action("SEO", "Home")">SEO</a>
+                                                    <a class="nav-link" href="@Url.Action("Marketing", "Home")#SEOsec">SEO</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="@Url.Action("ContentCreation", "Home")">Content Creation</a>
+                                                    <a class="nav-link" href="@Url.Action("Marketing", "Home")#CCsec">Content Creation</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="@Url.Action("DigitalMarketing", "Home")">Digital Marketing</a>
+                                                    <a class="nav-link" href="@Url.Action("Marketing", "Home")#DMsec">Digital Marketing</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="@Url.Action("SMM", "Home")">Social Media Management</a>
+                                                    <a class="nav-link" href="@Url.Action("Marketing", "Home")#SMsec">Social Media Management</a>
                                             </ul>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="@Url.Action("WebDesign", "Home")">
-                                                    Web Design and Development
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="@Url.Action("POS", "Home")">
-                                                    Point of Sale (POS) Design and Development
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="/about-2/">
-                                                    Outsourcing Solutions
-                                                </a>
-                                            </li>
-</li>
-
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link d-flex align-items-center" href="@Url.Action("SoftDesignAndDev", "Home")">
+                                                Software Design and Development
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" >
+                                                    <polyline points="9 6 15 12 9 18"></polyline>
+                                                </svg>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="@Url.Action("SoftDesignAndDev", "Home")#webSec">Website</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="@Url.Action("SoftDesignAndDev", "Home")#EcomSec">Ecommerce</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="@Url.Action("SoftDesignAndDev", "Home")#POSsec">Point of Sales</a>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="@Url.Action("Outsourcing", "Home")">
+                                                Outsourcing Solutions
+                                            </a>
+                                        </li>
                                     </ul>
                                 </li>
-                                <!-- Product Menu Item with Dropdown -->
+
+                                <!-- Product Menu Item with Dropdown-->
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/#">
+                                    <a class="nav-link" href="@Url.Action("Index", "Home")#productSummary">
                                         Product
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                             <polyline points="6 9 12 15 18 9"></polyline>
@@ -98,7 +107,7 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="@Url.Action("Ecommerce", "Home")">
+                                            <a class="nav-link" href="@Url.Action("/", "Home")">
                                                 Gym Equipment
                                             </a>
                                         </li>
@@ -113,12 +122,13 @@
                                     </ul>
                                 </li>
 
-                                <!-- Rental Menu -->
+                                <!-- Real Estate Menu -->
                                 <li class="nav-item">
                                     <a class="nav-link" href="@Url.Action("Rental", "Home")">
                                         Real Estate
                                     </a>
                                 </li>
+
                                 <!-- Blog Menu -->
                                 <li class="nav-item">
                                     <a class="nav-link" href="@Url.Action("Blog", "Home")">

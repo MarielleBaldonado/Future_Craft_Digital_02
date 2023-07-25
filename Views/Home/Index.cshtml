@@ -146,7 +146,18 @@
             </div>
         </div>
     </div>*@
-<div class="boxes-area">
+
+<!-- Services Summary -->
+<div class="boxes-area" id="servicesSummary">
+    <div class="page-title-area">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="container">
+                    <h1>Services</h1>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6">
@@ -162,9 +173,9 @@
                         </svg>
                     </div>
                     <h3>
-                        <a href="/feature-details/">Marketing Strategies</a>
+                        <a href="/feature-details/">Marketing</a>
                     </h3>
-                    <p>We are passionate about helping businesses reach their target audience effectively. Our skilled marketing team employs comprehensive strategies, including digital marketing, social media management, SEO optimization, and content creation, to elevate your brand visibility and drive sustainable growth.</p>
+                    <p>Marketing info...</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -186,9 +197,25 @@
                         </svg>
                     </div>
                     <h3>
-                        <a href="/feature-details/">Web Development</a>
+                        <a href=@Url.Action("WebDesign", "Home")>Web Design and Development</a>
                     </h3>
                     <p>A powerful online presence is crucial in today's digital era. Our experienced web design and development team creates stunning, user-friendly websites that captivate your audience and deliver seamless user experiences. From responsive design to e-commerce solutions, we ensure your website is visually appealing, functional, and optimized for success.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-box bg-c679e3">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>
+                        <a href="@Url.Action("POS", "Home")">POS Design and Development</a>
+                    </h3>
+                    <p>POS info...</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -207,336 +234,196 @@
                     <p>We understand the importance of maximizing efficiency and reducing costs for businesses. Our outsourcing services cover a wide range of areas, including customer support, back-office operations, data entry, and more. By entrusting your non-core functions to us, you can free up valuable resources and concentrate on your core competencies.</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="single-box bg-eb6b3d">
-                    <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12.49,17.969c-0.067-0.437,0.035-0.874,0.286-1.244c3.159-4.419,8.268-7.058,13.697-7.058	c9.26,0,16.806,7.545,16.806,16.805c0,9.26-7.546,16.806-16.806,16.806c-7.546,0-14.201-5.075-16.201-12.336	c-0.117-0.42-0.067-0.874,0.153-1.261c0.218-0.403,0.587-0.672,1.024-0.789c0.03-0.009,0.061-0.009,0.092-0.016	c0.847-0.19,1.732,0.333,1.976,1.176c1.597,5.815,6.924,9.865,12.957,9.865c7.394-0.018,13.428-6.051,13.445-13.445	c-0.016-7.395-6.051-13.428-13.445-13.444c-4.336,0-8.437,2.117-10.958,5.646c-0.502,0.697-1.532,0.887-2.252,0.434	c-0.028-0.017-0.057-0.029-0.083-0.047C12.81,18.809,12.574,18.422,12.49,17.969z M11.28,25.497	c0.036,0.006,0.068,0.007,0.101,0.012c0.06,0.009,0.119,0.021,0.184,0.021c0.824,0,1.514-0.588,1.664-1.378c0-0.017,0-0.017,0-0.017	c0.146-0.876-0.416-1.713-1.27-1.923c-0.031-0.008-0.06-0.021-0.092-0.027c-0.908-0.151-1.797,0.471-1.949,1.361	C9.767,24.472,10.373,25.346,11.28,25.497z M27.313,31.514h-0.84h-4.201c-0.929,0-1.681,0.752-1.681,1.68	c0,0.928,0.752,1.681,1.681,1.681h2.521c0,0.928,0.752,1.681,1.68,1.681c0.929,0,1.681-0.753,1.681-1.681v-0.076	c2.38-0.402,4.201-2.472,4.201-4.966c0-2.78-2.262-5.041-5.042-5.041h-1.68c-0.927,0-1.681-0.754-1.681-1.681	c0-0.926,0.753-1.68,1.681-1.68h0.84h4.201c0.929,0,1.681-0.752,1.681-1.681c0-0.928-0.752-1.681-1.681-1.681h-2.521	c0-0.928-0.752-1.68-1.681-1.68c-0.928,0-1.68,0.752-1.68,1.68v0.076c-2.381,0.401-4.201,2.472-4.201,4.965	c0,2.78,2.262,5.042,5.042,5.042h1.68c0.927,0,1.681,0.754,1.681,1.68C28.993,30.76,28.24,31.514,27.313,31.514z M33.194,75.197	c0,0.004,0.001,0.008,0.001,0.012v13.445c0,0.928-0.752,1.68-1.681,1.68H11.348c-0.929,0-1.681-0.752-1.681-1.68V75.208	c0-0.004,0.001-0.008,0.001-0.011c0-0.02,0.005-0.04,0.006-0.059c0.005-0.114,0.021-0.228,0.049-0.339	c0.009-0.037,0.022-0.073,0.034-0.108c0.032-0.098,0.073-0.194,0.124-0.286c0.01-0.019,0.015-0.041,0.026-0.061l5.041-8.403	c0.304-0.507,0.85-0.816,1.441-0.816h10.083c0.591,0,1.137,0.309,1.441,0.816l5.042,8.403c0.011,0.019,0.015,0.041,0.026,0.061	c0.051,0.092,0.092,0.188,0.124,0.286c0.012,0.036,0.024,0.071,0.034,0.108c0.028,0.112,0.044,0.226,0.049,0.34	C33.188,75.158,33.193,75.177,33.194,75.197z M29.834,76.889H13.028v10.083h16.806V76.889z M17.341,68.486l-3.025,5.042h14.229	l-3.024-5.042H17.341z M24.792,83.611c0.924,0,1.68-0.757,1.68-1.681c0-0.925-0.756-1.68-1.68-1.68c-0.924,0-1.681,0.756-1.681,1.68	C23.111,82.854,23.868,83.611,24.792,83.611z M18.07,83.611c0.924,0,1.68-0.757,1.68-1.681c0-0.925-0.756-1.68-1.68-1.68	c-0.924,0-1.681,0.756-1.681,1.68C16.389,82.854,17.146,83.611,18.07,83.611z M60.083,60.083v28.57c0,0.928-0.751,1.68-1.68,1.68	H48.32H38.236c-0.929,0-1.68-0.752-1.68-1.68v-28.57c0-0.928,0.751-1.68,1.68-1.68H50v-1.681c0-0.928,0.752-1.68,1.681-1.68	c0.929,0,1.68,0.752,1.68,1.68v1.681h5.042C59.332,58.403,60.083,59.155,60.083,60.083z M56.722,61.764h-5.041H39.917v25.208h6.722	v-1.68c0-0.928,0.752-1.681,1.681-1.681c0.929,0,1.68,0.753,1.68,1.681v1.68h6.722V61.764z M51.681,78.569	c-0.924,0-1.681,0.756-1.681,1.681c0,0.924,0.757,1.68,1.681,1.68s1.68-0.756,1.68-1.68C53.361,79.326,52.605,78.569,51.681,78.569z M44.958,78.569c-0.924,0-1.68,0.756-1.68,1.681c0,0.924,0.757,1.68,1.68,1.68c0.924,0,1.681-0.756,1.681-1.68	C46.639,79.326,45.882,78.569,44.958,78.569z M44.958,65.125c-0.924,0-1.68,0.756-1.68,1.681c0,0.924,0.757,1.68,1.68,1.68	c0.924,0,1.681-0.757,1.681-1.68C46.639,65.881,45.882,65.125,44.958,65.125z M50,66.806c0,0.924,0.757,1.68,1.681,1.68	s1.68-0.757,1.68-1.68c0-0.925-0.756-1.681-1.68-1.681S50,65.881,50,66.806z M51.681,71.847c-0.924,0-1.681,0.756-1.681,1.681	c0,0.924,0.757,1.68,1.681,1.68s1.68-0.756,1.68-1.68C53.361,72.603,52.605,71.847,51.681,71.847z M44.958,71.847	c-0.924,0-1.68,0.756-1.68,1.681c0,0.924,0.757,1.68,1.68,1.68c0.924,0,1.681-0.756,1.681-1.68	C46.639,72.603,45.882,71.847,44.958,71.847z M90.333,26.472v6.722v6.723v6.722v6.722v6.722v6.723v6.722v6.722v8.403	c0,0.928-0.751,1.68-1.68,1.68H80.25h-6.722h-8.403c-0.929,0-1.681-0.752-1.681-1.68V80.25v-6.722v-6.722v-6.723v-6.722v-6.722	v-6.722v-6.723v-6.722c0-0.928,0.752-1.68,1.681-1.68h23.528C89.582,24.792,90.333,25.544,90.333,26.472z M86.972,81.93H66.806	v5.042h5.041c0-0.928,0.752-1.68,1.681-1.68c0.929,0,1.68,0.752,1.68,1.68h3.361c0-0.928,0.752-1.68,1.681-1.68	s1.681,0.752,1.681,1.68h5.041V81.93z M66.806,31.514h20.166v-3.361H66.806V31.514z M66.806,34.875v3.361h20.166v-3.361H66.806z M86.972,41.597H66.806v3.361h20.166V41.597z M86.972,48.319H66.806v3.362h20.166V48.319z M86.972,55.042H66.806v3.361h20.166	V55.042z M86.972,61.764H66.806v3.361h20.166V61.764z M86.972,68.486H66.806v3.361h20.166V68.486z M86.972,78.569v-3.361H66.806	v3.361H86.972z M63.325,19.126l-3.361-8.403c-0.008-0.02-0.022-0.035-0.031-0.055c-0.044-0.1-0.098-0.195-0.159-0.282	c-0.015-0.022-0.027-0.046-0.043-0.067c-0.081-0.104-0.174-0.197-0.276-0.279c-0.024-0.019-0.051-0.035-0.075-0.052	c-0.084-0.06-0.174-0.113-0.269-0.157c-0.034-0.016-0.069-0.032-0.104-0.046c-0.105-0.04-0.213-0.069-0.326-0.088	c-0.019-0.003-0.037-0.013-0.057-0.015c-0.008-0.001-0.015,0-0.023-0.002c-0.004-0.001-0.008-0.002-0.012-0.003	c-0.009-0.001-0.017,0.001-0.026,0c-0.101-0.011-0.201-0.012-0.299-0.004c-0.006,0-0.012,0-0.018,0.001	c-0.432,0.038-0.826,0.245-1.112,0.576c-0.005,0.006-0.01,0.012-0.015,0.018c-0.02,0.024-0.042,0.045-0.061,0.07l-5.042,6.722	c-0.558,0.743-0.407,1.796,0.337,2.352c0.743,0.56,1.795,0.407,2.352-0.336l1.189-1.585c-1.741,10.98-4.887,19.347-12.668,27.128	c-7.672,7.67-20.104,11.849-31.704,10.626c-0.97-0.092-1.75,0.574-1.846,1.495c-0.097,0.923,0.573,1.751,1.495,1.847	c1.439,0.151,2.889,0.225,4.343,0.225c11.242,0,22.686-4.415,30.089-11.817c8.432-8.433,11.787-17.367,13.625-29.062l0.975,2.438	c0.263,0.657,0.894,1.057,1.561,1.057c0.208,0,0.42-0.039,0.624-0.121C63.249,20.965,63.669,19.988,63.325,19.126z"></path>
-                        </svg>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Product Summary -->
+<!-- Please fix the design -->
+<div class="boxes-area bg-f7fafd mt-5" id="productSummary">
+    <div class="page-title-area">
+        <div class="">
+            <h1>Products</h1>
+        </div>
+    </div>
+    <div class="services-area ptb-80">
+        <div class="container mb-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-12 services-content">
+                    <div class="">
+                        <h2>Gym Equipment</h2>
+                        <div class="bar"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <h3>
-                        <a href="/feature-details/">Real Estate</a>
-                    </h3>
-                    <p>In the fast-paced world of leasing and real estate, having a trusted partner is invaluable. Future Craft Digital offers specialized services to optimize your leasing and real estate operations. From property management software to marketing strategies tailored for the real estate industry, we provide comprehensive solutions to help you succeed.</p>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                </svg>
+                                Gym Equip type
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                </svg>
+                                Gym Equip type
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                                    <polyline points="13 2 13 9 20 9"></polyline>
+                                </svg>
+                                Gym Equip type
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                    <polyline points="17 6 23 6 23 12"></polyline>
+                                </svg>
+                                Gym Equip type
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                                Gym Equip type
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                                Gym Equip type
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                Gym Equip type
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                                </svg>
+                                Gym Equip type
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 services-right-image">
+                    <img src="../assets/img/services-right-image/box.png" class="animate__animated animate__fadeInUp animate__delay-0.2s" data-wow-delay="0.6s" alt="box" />
+                    <img src="../assets/img/services-right-image/chair.png" class="animate__animated animate__fadeInLeft animate__delay-0.2s" alt="chair" />
+                    <img src="../assets/img/services-right-image/cloud.png" class="animate__animated animate__zoomIn animate__delay-0.2s" alt="cloud" />
+                    <img src="../assets/img/services-right-image/cup.png" class="animate__animated animate__bounceIn animate__delay-0.2s" alt="cup" />
+                    <img src="../assets/img/services-right-image/flower-top.png" class="animate__animated animate__fadeInDown animate__delay-0.2s" alt="flower" />
+                    <img src="../assets/img/services-right-image/head-phone.png" class="animate__animated animate__zoomIn animate__delay-0.2s" alt="head-phone" />
+                    <img src="../assets/img/services-right-image/monitor.png" class="animate__animated animate__fadeInUp animate__delay-0.2s" alt="monitor" />
+                    <img src="../assets/img/services-right-image/mug.png" class="animate__animated animate__rotateIn animate__delay-0.2s" alt="mug" />
+                    <img src="../assets/img/services-right-image/table.png" class="animate__animated animate__fadeInUp animate__delay-0.2s" alt="table" />
+                    <img src="../assets/img/services-right-image/tissue.png" class="animate__animated animate__zoomIn animate__delay-0.2s" alt="tissue" />
+                    <img src="../assets/img/services-right-image/water-bottle.png" class="animate__animated animate__fadeInUp animate__delay-0.2s" alt="water-bottle" />
+                    <img src="../assets/img/services-right-image/wifi.png" class="animate__animated animate__fadeInLeft animate__delay-0.2s" data-wow-delay="0.6s" alt="wifi" />
+                    <img src="../assets/img/services-right-image/cercle-shape.png" class="bg-image rotateme" alt="shape" />
+                    <img src="../assets/img/services-right-image/service-right-main-pic.png" class="animate__animated animate__fadeInUp animate__delay-0.2s" alt="main-pic" />
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="services-area ptb-80 bg-f7fafd">
-    <div class="container">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-lg-6 col-md-12 services-content">
-                <div class="section-title">
-                    <h2>Cloud Hosting Services</h2>
-                    <div class="bar"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="services-area ptb-80">
+        <div class="container">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-12 services-left-image">
+                    <img src="../assets/img/services-left-image/big-monitor.png" class="animate__animated animate__fadeInDown animate__delay-0.2s" alt="big-monitor" />
+                    <img src="../assets/img/services-left-image/creative.png" class="animate__animated animate__fadeInUp animate__delay-0.2s" alt="creative" />
+                    <img src="../assets/img/services-left-image/developer.png" class="animate__animated animate__fadeInLeft animate__delay-0.2s" alt="developer" />
+                    <img src="../assets/img/services-left-image/flower-top.png" class="animate__animated animate__fadeInLeft animate__delay-0.2s" data-wow-delay="0.6s" alt="flower-top" />
+                    <img src="../assets/img/services-left-image/small-monitor.png" class="animate__animated animate__bounceIn animate__delay-0.2s" alt="small-monitor" />
+                    <img src="../assets/img/services-left-image/small-top.png" class="animate__animated animate__fadeInDown animate__delay-0.2s" alt="small-top" />
+                    <img src="../assets/img/services-left-image/table.png" class="animate__animated animate__zoomIn animate__delay-0.2s" alt="table" />
+                    <img src="../assets/img/services-left-image/target.png" class="animate__animated animate__fadeInUp animate__delay-0.2s" alt="target" />
+                    <img src="../assets/img/services-left-image/cercle-shape.png" class="bg-image rotateme" alt="shape" />
+                    <img src="../assets/img/services-left-image/service-left-main-pic.png" class="animate__animated animate__fadeInUp animate__delay-0.2s" alt="main-pic" />
                 </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                            </svg>
-                            Cloud databases
-                        </div>
+                <div class="col-lg-6 col-md-12 services-content">
+                    <div class="">
+                        <h2>Software</h2>
+                        <div class="bar"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <line x1="2" y1="12" x2="22" y2="12"></line>
-                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                            </svg>
-                            Website hosting
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                                    <line x1="9" y1="21" x2="9" y2="9"></line>
+                                </svg>
+                                Microsoft Windows
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-                                <polyline points="13 2 13 9 20 9"></polyline>
-                            </svg>
-                            File storage
+                        <div class="col-lg-6 col-md-6">
+                            <div class="box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                                Microsoft Office
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
-                                <polyline points="17 6 23 6 23 12"></polyline>
-                            </svg>
-                            Forex trading
+                        <div class="col-lg-6 col-md-6">
+                            <div class="box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                                </svg>
+                                Antivirus
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                            </svg>
-                            File backups
+                        <div class="col-lg-6 col-md-6">
+                            <div class="box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                                Cloud
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                <line x1="12" y1="17" x2="12" y2="21"></line>
-                            </svg>
-                            Remote desktop
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                            Email servers
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
-                            </svg>
-                            Hybrid cloud
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-12 services-right-image">
-                <img src="../assets/img/services-right-image/box.png" class="animate__animated animate__fadeInUp animate__delay-0.2s" data-wow-delay="0.6s" alt="box" />
-                <img src="../assets/img/services-right-image/chair.png" class="animate__animated animate__fadeInLeft animate__delay-0.2s" alt="chair" />
-                <img src="../assets/img/services-right-image/cloud.png" class="animate__animated animate__zoomIn animate__delay-0.2s" alt="cloud" />
-                <img src="../assets/img/services-right-image/cup.png" class="animate__animated animate__bounceIn animate__delay-0.2s" alt="cup" />
-                <img src="../assets/img/services-right-image/flower-top.png" class="animate__animated animate__fadeInDown animate__delay-0.2s" alt="flower" />
-                <img src="../assets/img/services-right-image/head-phone.png" class="animate__animated animate__zoomIn animate__delay-0.2s" alt="head-phone" />
-                <img src="../assets/img/services-right-image/monitor.png" class="animate__animated animate__fadeInUp animate__delay-0.2s" alt="monitor" />
-                <img src="../assets/img/services-right-image/mug.png" class="animate__animated animate__rotateIn animate__delay-0.2s" alt="mug" />
-                <img src="../assets/img/services-right-image/table.png" class="animate__animated animate__fadeInUp animate__delay-0.2s" alt="table" />
-                <img src="../assets/img/services-right-image/tissue.png" class="animate__animated animate__zoomIn animate__delay-0.2s" alt="tissue" />
-                <img src="../assets/img/services-right-image/water-bottle.png" class="animate__animated animate__fadeInUp animate__delay-0.2s" alt="water-bottle" />
-                <img src="../assets/img/services-right-image/wifi.png" class="animate__animated animate__fadeInLeft animate__delay-0.2s" data-wow-delay="0.6s" alt="wifi" />
-                <img src="../assets/img/services-right-image/cercle-shape.png" class="bg-image rotateme" alt="shape" />
-                <img src="../assets/img/services-right-image/service-right-main-pic.png" class="animate__animated animate__fadeInUp animate__delay-0.2s" alt="main-pic" />
-            </div>
-        </div>
-    </div>
-</div>
-<div class="services-area ptb-80">
-    <div class="container">
-        <div class="row h-100 justify-content-center align-items-center">
-            <div class="col-lg-6 col-md-12 services-left-image">
-                <img src="../assets/img/services-left-image/big-monitor.png" class="animate__animated animate__fadeInDown animate__delay-0.2s" alt="big-monitor" />
-                <img src="../assets/img/services-left-image/creative.png" class="animate__animated animate__fadeInUp animate__delay-0.2s" alt="creative" />
-                <img src="../assets/img/services-left-image/developer.png" class="animate__animated animate__fadeInLeft animate__delay-0.2s" alt="developer" />
-                <img src="../assets/img/services-left-image/flower-top.png" class="animate__animated animate__fadeInLeft animate__delay-0.2s" data-wow-delay="0.6s" alt="flower-top" />
-                <img src="../assets/img/services-left-image/small-monitor.png" class="animate__animated animate__bounceIn animate__delay-0.2s" alt="small-monitor" />
-                <img src="../assets/img/services-left-image/small-top.png" class="animate__animated animate__fadeInDown animate__delay-0.2s" alt="small-top" />
-                <img src="../assets/img/services-left-image/table.png" class="animate__animated animate__zoomIn animate__delay-0.2s" alt="table" />
-                <img src="../assets/img/services-left-image/target.png" class="animate__animated animate__fadeInUp animate__delay-0.2s" alt="target" />
-                <img src="../assets/img/services-left-image/cercle-shape.png" class="bg-image rotateme" alt="shape" />
-                <img src="../assets/img/services-left-image/service-left-main-pic.png" class="animate__animated animate__fadeInUp animate__delay-0.2s" alt="main-pic" />
-            </div>
-            <div class="col-lg-6 col-md-12 services-content">
-                <div class="section-title">
-                    <h2>Design &amp;Development</h2>
-                    <div class="bar"></div>
-                    <p>Enhance your online presence with our powerful web design and development services. Our experienced team creates stunning, user-friendly websites that captivate audiences and deliver seamless user experiences. From responsive design to e-commerce solutions, we ensure your website stands out, engages visitors, and drives success.</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                <line x1="3" y1="9" x2="21" y2="9"></line>
-                                <line x1="9" y1="21" x2="9" y2="9"></line>
-                            </svg>
-                            Responsive design
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="16 18 22 12 16 6"></polyline>
-                                <polyline points="8 6 2 12 8 18"></polyline>
-                            </svg>
-                            React web development
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                                <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                            </svg>
-                            Android apps development
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="16 18 22 12 16 6"></polyline>
-                                <polyline points="8 6 2 12 8 18"></polyline>
-                            </svg>
-                            Laravel web development
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                                <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                            </svg>
-                            iOS apps development
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="19" y1="5" x2="5" y2="19"></line>
-                                <circle cx="6.5" cy="6.5" r="2.5"></circle>
-                                <circle cx="17.5" cy="17.5" r="2.5"></circle>
-                            </svg>
-                            UX/UI design
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="9" cy="21" r="1"></circle>
-                                <circle cx="20" cy="21" r="1"></circle>
-                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                            </svg>
-                            E-commerce development
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                            </svg>
-                            Print ready design
-                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="pricing-area pt-80 pb-50 bg-f9f6f6">
-    <div class="container">
-        <div class="section-title">
-            <h2>Pricing Plans</h2>
-            <div class="bar"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6">
-                <div class="pricing-table">
-                    <div class="pricing-header">
-                        <h3>Basic Plan</h3>
-                    </div>
-                    <div class="price">
-                        <span>
-                            <sup>$</sup>
-                            15.00 <span>/Mon</span>
-                        </span>
-                    </div>
-                    <div class="pricing-features">
-                        <ul>
-                            <li class="active">5 GB Bandwidth</li>
-                            <li class="active">Highest Speed</li>
-                            <li class="active">1 GB Storage</li>
-                            <li class="active">Unlimited Website</li>
-                            <li class="active">Unlimited Users</li>
-                            <li class="active">24x7 Great Support</li>
-                            <li>Data Security and Backups</li>
-                            <li>Monthly Reports and Analytics</li>
-                        </ul>
-                    </div>
-                    <div class="pricing-footer">
-                        <a class="btn btn-primary" href="/it-startup/#">Select Plan</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="pricing-table active-plan">
-                    <div class="pricing-header">
-                        <h3>Advanced Plan</h3>
-                    </div>
-                    <div class="price">
-                        <span>
-                            <sup>$</sup>
-                            35.00 <span>/Mon</span>
-                        </span>
-                    </div>
-                    <div class="pricing-features">
-                        <ul>
-                            <li class="active">10 GB Bandwidth</li>
-                            <li class="active">Highest Speed</li>
-                            <li class="active">3 GB Storage</li>
-                            <li class="active">Unlimited Website</li>
-                            <li class="active">Unlimited Users</li>
-                            <li class="active">24x7 Great Support</li>
-                            <li class="active">Data Security and Backups</li>
-                            <li>Monthly Reports and Analytics</li>
-                        </ul>
-                    </div>
-                    <div class="pricing-footer">
-                        <a class="btn btn-primary" href="/it-startup/#">Select Plan</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="pricing-table">
-                    <div class="pricing-header">
-                        <h3>Expert Plan</h3>
-                    </div>
-                    <div class="price">
-                        <span>
-                            <sup>$</sup>
-                            65.00 <span>/Mon</span>
-                        </span>
-                    </div>
-                    <div class="pricing-features">
-                        <ul>
-                            <li class="active">15 GB Bandwidth</li>
-                            <li class="active">Highest Speed</li>
-                            <li class="active">5 GB Storage</li>
-                            <li class="active">Unlimited Website</li>
-                            <li class="active">Unlimited Users</li>
-                            <li class="active">24x7 Great Support</li>
-                            <li class="active">Data Security and Backups</li>
-                            <li class="active">Monthly Reports and Analytics</li>
-                        </ul>
-                    </div>
-                    <div class="pricing-footer">
-                        <a class="btn btn-primary" href="/it-startup/#">Select Plan</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="shape8 rotateme">
-        <img src="../assets/img/shape2.svg" alt="shape" />
-    </div>
-    <div class="shape2 rotateme">
-        <img src="../assets/img/shape2.svg" alt="shape" />
-    </div>
-    <div class="shape7">
-        <img src="../assets/img/shape4.svg" alt="shape" />
-    </div>
-    <div class="shape4">
-        <img src="../assets/img/shape4.svg" alt="shape" />
-    </div>
-</div>
-<div class="blog-area pt-80 pb-50">
+
+
+
+
+<!-- Blog Section -->
+<div class="blog-area pb-50">
     <div class="container">
         <div class="section-title">
             <h2>The News from Our Blog</h2>
@@ -650,11 +537,11 @@
     </div>
 </div>
 
-@* Table of Contents *@
-<section class="toc-area ptb-80">
+@* Frequently asked questions *@
+<section class="toc-area pb-80 pt-sm-1">
     <div class="container">
         <div class="section-title">
-            <h2>Table of Contents</h2>
+            <h2>Frequently Asked Questions</h2>
             <div class="bar"></div>
         </div>
         <div class="row">
@@ -747,34 +634,12 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- About FDC Card -->
-                    <div class="card">
-                        <div class="card-header" id="headingFour">
-                            <h5 class="mb-0">
-                                <button class="toc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    About Future Craft Digital
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#tocAccordion">
-                            <div class="card-body">
-                                <p>
-                                    At Future Craft Digital, we are a dynamic and forward-thinking company based in the Philippines. Our primary focus is on providing exceptional outsourcing, marketing, web design, point of sale system solutions, and expertise in the leasing and real estate industry.
-                                    We pride ourselves on delivering innovative and tailored services to help businesses thrive in today's competitive landscape.
-                                </p>
-                                <p>
-                                    Our team at Future Craft Digital is comprised of industry experts, creative professionals, and dedicated individuals who are passionate about driving your business growth.
-                                    We combine innovative technologies, strategic thinking, and personalized approaches to deliver exceptional results for our clients.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 @* Email *@
 <div class="my-5">
     <div class="container">
