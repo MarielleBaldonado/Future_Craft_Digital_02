@@ -1001,6 +1001,9 @@
   .ml-partner-area.mt-minus-top {
     margin-top: -125px;
   }
+  .ml-partner-area.mt-minus-bot {
+    margin-bottom: -125px;
+  }
   .solutions-area {
     padding-bottom: 20px;
   }
@@ -2115,6 +2118,9 @@
   }
   .ml-partner-area.mt-minus-top {
     margin-top: -120px;
+  }
+  .ml-partner-area.mt-minus-bot {
+    margin-bottom: -120px;
   }
   .about-area .container-fluid {
     max-width: 720px;

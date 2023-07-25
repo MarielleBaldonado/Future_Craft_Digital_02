@@ -32037,6 +32037,10 @@ label {
     margin-top: -80px
 }
 
+.ml-partner-area.mt-minus-bot {
+    margin-bottom: -80px
+}
+
 .single-ml-partner {
     text-align: center
 }
@@ -35190,6 +35194,10 @@ label {
         margin-top: -125px
     }
 
+    .ml-partner-area.mt-minus-bot {
+        margin-bottom: -125px
+    }
+
     .solutions-area {
         padding-bottom: 20px
     }
@@ -36556,6 +36564,10 @@ label {
 
     .ml-partner-area.mt-minus-top {
         margin-top: -120px
+    }
+
+    .ml-partner-area.mt-minus-bot {
+        margin-bottom: -120px
     }
 
     .about-area .container-fluid {
@@ -39199,6 +39211,14 @@ th {
 
 /* Custom Styles*/
 
-.mb-10 {
-    margin-bottom: 10rem !important
+.mt-15 {
+    margin-top: 15rem !important
 }
+.mt-md-15 {
+    margin-top: 5rem !important
+}
+
+.ml-min-1 {
+    margin-left: -33px !important
+}
+
