@@ -160,6 +160,7 @@
     </div>
     <div class="container">
         <div class="row">
+            @* Marketing Summary*@
             <div class="col-lg-4 col-md-12">
                 <div class="single-box">
                     <div class="d-flex justify-content-center ">
@@ -170,16 +171,49 @@
                             <path d="M114.6,58.1H75.5v74.3h39.1V58.1z M104.8,122.6H85.3V68h19.4V122.6z" />
                             <path d="M227,42.7h-39.1v89.8H227V42.7z M217.2,122.6h-19.4V52.5h19.4V122.6z" />
                             <path d="M170.8,9h-39.1v123.4h39.1V9z M161,122.6h-19.4V18.9H161V122.6z" />
-                       </g>
-                        </svg>
+                                </g>
+                            </svg>
                         </div>
                     </div>
                     <h3 class="text-center">
-                        <a href="/feature-details/">Marketing</a>
+                        <a href="@Url.Action("Marketing", "Home")">Marketing</a>
                     </h3>
-                    <p>Marketing info...</p>
+                    <p class="text-justify mx-3">Marketing info...</p>
+                    <div class="row services-content mx-3 mx-md-0">
+                        <div class="col-lg-12 col-md-6">
+                            <a href="@Url.Action("Marketing", "Home")#SEOsec" class="box  text-center text-secondary">
+                                <div class="ml-min-1">
+                                    Search Engine Optimization
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-6">
+                            <a href="@Url.Action("Marketing", "Home")#CCsec" class="box text-center text-secondary">
+                                <div class="ml-min-1">
+                                    Content Creation
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-6">
+                            <a href="@Url.Action("Marketing", "Home")#DMsec" class="box text-center text-secondary">
+                                <div class="ml-min-1">
+                                    Digital Marketing
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-6">
+                            <a  href="@Url.Action("Marketing", "Home")#SMsec" class="box text-center text-secondary">
+                                <div class="ml-min-1">
+                                    Social Media Management
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            @* Software DnD Summary*@
             <div class="col-lg-4 col-md-12">
                 <div class="single-box bg-f78acb">
                     <div class="d-flex justify-content-center">
@@ -193,11 +227,40 @@
                         </div>
                     </div>
                     <h3 class="text-center">
-                        <a href=@Url.Action("WebDesign", "Home")>Web Design and Development</a>
+                        <a href="@Url.Action("SoftDesignAndDev", "Home")">Software Design and Development</a>
                     </h3>
-                    <p>A powerful online presence is crucial in today's digital era. Our experienced web design and development team creates stunning, user-friendly websites that captivate your audience and deliver seamless user experiences. From responsive design to e-commerce solutions, we ensure your website is visually appealing, functional, and optimized for success.</p>
+                    <p class="text-justify mx-3">A powerful online presence is crucial in today's digital era. Our experienced software design and development team creates stunning, user-friendly websites, ecommerce and POS systems that captivate your audience and deliver seamless user experiences. From responsive design to e-commerce solutions, we ensure the development of softwares that are visually appealing, functional, and optimized for success.</p>
+                    <div class="row services-content mx-3 mx-md-0">
+                        <div class="col-lg-12 col-md-6 ">
+                            <a href="@Url.Action("SoftDesignAndDev", "Home")#webSec" class="box text-center text-secondary">
+                                <div class="ml-min-1">
+                                    Website
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-6">
+                            <a href="@Url.Action("SoftDesignAndDev", "Home")#ecomSec" class="box text-center text-secondary">
+                                <div class="ml-min-1">
+                                    Ecommerce
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row services-content mx-3 mx-md-0">
+                        <div class="col"></div>
+                        <div class="col-lg-12 col-md-6">
+                            <a href="@Url.Action("SoftDesignAndDev", "Home")#POSsec" class="box text-center text-secondary">
+                                <div class="ml-min-1">
+                                    Point of Sales
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col"></div>
+                    </div>
                 </div>
             </div>
+
+            @* Outsourcing *@
             <div class="col-lg-4 col-md-12">
                 <div class="single-box bg-c679e3">
                     <div class="d-flex justify-content-center ">
@@ -209,16 +272,17 @@
                                 <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                             </svg>
                         </div>
-
                     </div>
                     <h3 class="text-center">
-                        <a href="/feature-details/">Outsourcing Solutions</a>
+                        <a href="@Url.Action("Outsourcing", "Home")">Outsourcing Solutions</a>
                     </h3>
-                    <p>We understand the importance of maximizing efficiency and reducing costs for businesses. Our outsourcing services cover a wide range of areas, including customer support, back-office operations, data entry, and more. By entrusting your non-core functions to us, you can free up valuable resources and concentrate on your core competencies.</p>
+                    <p class="text-justify mx-3">We understand the importance of maximizing efficiency and reducing costs for businesses. Our outsourcing services cover a wide range of areas, including customer support, back-office operations, data entry, and more. By entrusting your non-core functions to us, you can free up valuable resources and concentrate on your core competencies.</p>
                 </div>
             </div>
+
         </div>
     </div>
+
 </div>
 
 
@@ -394,7 +458,7 @@
                                 Cloud
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
