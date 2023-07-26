@@ -39209,21 +39209,25 @@ th {
     font-size: 24px;
 }
 
-/* Custom Styles*/
+/* Services */
 
 .mt-15 {
-    margin-top: 15rem !important
+    margin-top: 15rem !important;
 }
 .mt-md-15 {
-    margin-top: 5rem !important
+    margin-top: 5rem !important;
 }
 
 .ml-min-1 {
-    margin-left: -33px !important
+    margin-left: -33px !important;
 }
 
 .mb-10 {
-    margin-bottom: 10rem !important
+    margin-bottom: 10rem !important;
+}
+
+.mb-min-1{
+    margin-top: -15rem !important;
 }
 
 /* Cart */
