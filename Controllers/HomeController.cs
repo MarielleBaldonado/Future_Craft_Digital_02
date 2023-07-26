@@ -68,13 +68,18 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        public ActionResult Cart()
+        {
+            return View();
+        }
+
         // -------------- FOR INSIGHTS ---------------------
 
         public ActionResult Insights()
         {
             return View();
         }
-
+        
         public ActionResult Blogs()
         {
             return View();
@@ -85,7 +90,6 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        
-
+    
     }
 }
