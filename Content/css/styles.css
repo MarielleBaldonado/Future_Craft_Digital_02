@@ -24033,7 +24033,7 @@ label {
 
 .section-title {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 50px
 }
 
@@ -32037,6 +32037,10 @@ label {
     margin-top: -80px
 }
 
+.ml-partner-area.mt-minus-bot {
+    margin-bottom: -80px
+}
+
 .single-ml-partner {
     text-align: center
 }
@@ -35190,6 +35194,10 @@ label {
         margin-top: -125px
     }
 
+    .ml-partner-area.mt-minus-bot {
+        margin-bottom: -125px
+    }
+
     .solutions-area {
         padding-bottom: 20px
     }
@@ -36556,6 +36564,10 @@ label {
 
     .ml-partner-area.mt-minus-top {
         margin-top: -120px
+    }
+
+    .ml-partner-area.mt-minus-bot {
+        margin-bottom: -120px
     }
 
     .about-area .container-fluid {
@@ -39196,3 +39208,17 @@ th {
     color: #ffd700; /* Star color */
     font-size: 24px;
 }
+
+/* Custom Styles*/
+
+.mt-15 {
+    margin-top: 15rem !important
+}
+.mt-md-15 {
+    margin-top: 5rem !important
+}
+
+.ml-min-1 {
+    margin-left: -33px !important
+}
+
