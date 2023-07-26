@@ -68,7 +68,7 @@
                                                     <a class="nav-link" href="@Url.Action("Marketing", "Home")#DMsec">Digital Marketing</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="@Url.Action("Marketing", "Home")#SMsec">Social Media Management</a>
+                                                    <a class="nav-link" href="@Url.Action("Marketing", "Home")#SMMsec">Social Media Management</a>
                                             </ul>
                                         </li>
                                         <li class="nav-item">
@@ -96,48 +96,63 @@
                                         </li>
                                     </ul>
                                 </li>
+                            <!-- Product Menu Item with Dropdown -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="/#">
+                                    Product
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="@Url.Action("Ecommerce", "Home")">
+                                            Gym Equipment
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="@Url.Action("Software", "Home")">
+                                            Software
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="9 6 15 12 9 18"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
 
-                                <!-- Product Menu Item with Dropdown-->
-                                <li class="nav-item">
-                                    <a class="nav-link" href="@Url.Action("Index", "Home")#productSummary">
-                                        Product
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <polyline points="6 9 12 15 18 9"></polyline>
-                                        </svg>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="@Url.Action("/", "Home")">
-                                                Gym Equipment
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="@Url.Action("Software", "Home")">
-                                                Software
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                    <polyline points="9 6 15 12 9 18"></polyline>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
+                            <!-- Rental Menu -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("Rental", "Home")">
+                                    Real Estate
+                                </a>
+                            </li>
 
-                                <!-- Real Estate Menu -->
-                                <li class="nav-item">
-                                    <a class="nav-link" href="@Url.Action("Rental", "Home")">
-                                        Real Estate
-                                    </a>
-                                </li>
 
-                                <!-- Blog Menu -->
-                                <li class="nav-item">
-                                    <a class="nav-link" href="@Url.Action("Blog", "Home")">
-                                        Blog
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="@Url.Action("About", "Home")">About Us</a>
-                                </li>
+                            <!-- Insights Menu -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("Insights", "Home")">
+                                    Insights
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="@Url.Action("Blogs", "Home")">
+                                            Blogs
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="@Url.Action("Testimonials", "Home")">
+                                            Testimonials
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("About", "Home")">About Us</a>
+                            </li>
                             </ul>
                         </div>
                         <div class="others-option">
