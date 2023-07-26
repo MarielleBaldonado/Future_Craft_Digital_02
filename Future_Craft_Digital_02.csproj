@@ -379,6 +379,10 @@
     <Content Include="Views\Home\SEO.cshtml" />
     <Content Include="Views\Home\Ecommerce.cshtml" />
     <Content Include="Views\Home\POS.cshtml" />
+    <None Include="Views\Home\.editorconfig" />
+    <Content Include="Views\Home\Blogs.cshtml" />
+    <Content Include="Views\Home\Insights.cshtml" />
+    <Content Include="Views\Home\Testimonials.cshtml" />
     <Content Include="Views\Home\SoftDesignAndDev.cshtml" />
     <Content Include="Views\Home\Marketing.cshtml" />
     <Content Include="Views\Home\Outsourcing.cshtml" />
