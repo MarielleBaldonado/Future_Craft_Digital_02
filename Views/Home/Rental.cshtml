@@ -1,6 +1,6 @@
-﻿@{ ViewBag.Title = "About"; }
+﻿@{ ViewBag.Title = "Real Estate"; }
 
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <div class="page-title-area">
     <div class="d-table">
         <div class="d-table-cell">
@@ -32,19 +32,35 @@
                 <div id="products-details-carousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="~/Assets/img/rental/image2.jpeg" alt="Image 1">
+                            <img class="d-block w-100" src="../Assets/img/rental/image2.jpeg" alt="Image 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="~/Assets/img/rental/image4.jpeg" alt="Image 2">
+                            <img class="d-block w-100" src="../Assets/img/rental/image4.jpeg" alt="Image 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-white">Grand Lobby</h5>
+                                <p class="text-white">Welcome guests and invite envy at the Grand Lobby: a lavishly-designed hall for families and friends to lounge in.</p>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="~/Assets/img/rental/image7.jpeg" alt="Image 3">
+                            <img class="d-block w-100" src="../Assets/img/rental/image7.jpeg" alt="Image 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-white">Amenities</h5>
+                                <p class="text-white">Shore 2 Residences offers a premier riverfront inspired lifestyle, with pools that stretch throughout the amenity deck of this development.</p>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="~/Assets/img/rental/image6.jpeg" alt="Image 4">
+                            <img class="d-block w-100" src="../Assets/img/rental/image6.jpeg" alt="Image 4">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-white">Grand Lobby</h5>
+                                <p class="text-white">Welcome guests and invite envy at the Grand Lobby: a lavishly-designed hall for families and friends to lounge in.</p>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="~/Assets/img/rental/image8.png" alt="Image 5">
+                            <img class="d-block w-100" src="../Assets/img/rental/image8.png" alt="Image 5">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-white">Amenities</h5>
+                                <p class="text-white">Shore 2 Residences offers a premier riverfront inspired lifestyle, with pools that stretch throughout the amenity deck of this development.</p>
+                            </div>
                         </div>
                     </div>
                     <ol class="carousel-indicators">
@@ -120,21 +136,119 @@
 
                     <div class="content show" id="tab_1_content">
                         <div class="products-description">
-                            <p>
-                                The location of SMDC Shore 2 Pasay provides convenient trasportation options. It is near in major roads and highways, making it accessible to various parts of Metro Manila. Additionally,  the development is close to the Ninoy Aquino International Airport (NAIA), which is a significant advantage for frequent travelers.
-                            </p>
+                            <div class="faq-area ptb-10">
+                                <div class="container">
+                                    <div class="faq-accordion">
+                                        <div data-accordion-component="Accordion" class="accordion">
+                                            <div data-accordion-component="AccordionItem" class="accordion__item">
+                                                <div data-accordion-component="AccordionItemHeading" role="heading" class="accordion__heading" aria-level="3">
+                                                    <div class="accordion__button" id="accordion__heading-a" aria-disabled="false" aria-expanded="true" aria-controls="accordion__panel-a" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
+                                                        <span>Condominium Location</span>
+                                                    </div>
+                                                </div>
+                                                <div data-accordion-component="AccordionItemPanel" class="accordion__panel" role="region" aria-labelledby="accordion__heading-a" id="accordion__panel-a">
+                                                    <p>SMDC Shore 2 Pasay is situated along Sunrise Drive, Mall of Asia Complex, Pasay City. It is strategically located near Manila Bay, providing residents with stunning views of the bay and its famous sunset.</p>
+                                                </div>
+                                            </div>
+                                            <div data-accordion-component="AccordionItem" class="accordion__item">
+                                                <div data-accordion-component="AccordionItemHeading" role="heading" class="accordion__heading" aria-level="3">
+                                                    <div class="accordion__button" id="accordion__heading-b" aria-disabled="false" aria-expanded="true" aria-controls="accordion__panel-b" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
+                                                        <span>About the Developer</span>
+                                                    </div>
+                                                </div>
+                                                <div data-accordion-component="AccordionItemPanel" class="accordion__panel" role="region" aria-labelledby="accordion__heading-b" id="accordion__panel-b">
+                                                    <p>The project is developed by SM Development Corporation (SMDC), one of the leading real estate developers in the Philippines. SMDC is known for its high-rise condominium projects that offer modern amenities and prime locations.</p>
+                                                </div>
+                                            </div>
+                                            <div data-accordion-component="AccordionItem" class="accordion__item">
+                                                <div data-accordion-component="AccordionItemHeading" role="heading" class="accordion__heading" aria-level="3">
+                                                    <div class="accordion__button" id="accordion__heading-c" aria-disabled="false" aria-expanded="true" aria-controls="accordion__panel-c" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
+                                                        <span>Condominium Features</span>
+                                                    </div>
+                                                </div>
+                                                <div data-accordion-component="AccordionItemPanel" class="accordion__panel" role="region" aria-labelledby="accordion__heading-c" id="accordion__panel-c">
+                                                    <p>SMDC Shore 2 Pasay is a high-rise residential condominium with multiple towers. The development offers various unit configurations, including studio, one-bedroom, two-bedroom, and three-bedroom units, catering to different lifestyle needs.</p>
+                                                </div>
+                                            </div>
+                                            <div data-accordion-component="AccordionItem" class="accordion__item">
+                                                <div data-accordion-component="AccordionItemHeading" role="heading" class="accordion__heading" aria-level="3">
+                                                    <div class="accordion__button" id="accordion__heading-d" aria-disabled="false" aria-expanded="true" aria-controls="accordion__panel-d" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
+                                                        <span>Amenities</span>
+                                                    </div>
+                                                </div>
+                                                <div data-accordion-component="AccordionItemPanel" class="accordion__panel" role="region" aria-labelledby="accordion__heading-d" id="accordion__panel-d">
+                                                    <p>The condominium provides a range of amenities to its residents. These may include swimming pools, fitness centers, function rooms, landscaped gardens, children's play areas, jogging paths, and 24-hour security. The specific amenities may vary depending on the project's design and offerings.</p>
+                                                </div>
+                                            </div>
+                                            <div data-accordion-component="AccordionItem" class="accordion__item">
+                                                <div data-accordion-component="AccordionItemHeading" role="heading" class="accordion__heading" aria-level="3">
+                                                    <div class="accordion__button" id="accordion__heading-e" aria-disabled="false" aria-expanded="true" aria-controls="accordion__panel-e" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
+                                                        <span>Proximity to Mall of Asia</span>
+                                                    </div>
+                                                </div>
+                                                <div data-accordion-component="AccordionItemPanel" class="accordion__panel" role="region" aria-labelledby="accordion__heading-e" id="accordion__panel-e">
+                                                    <p>
+                                                        SMDC Shore 2 Pasay is located in close proximity to the SM Mall of Asia, one of the largest shopping centers in the Philippines. Residents can enjoy easy access to a wide array of retail shops, restaurants, entertainment options, and cinemas.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div data-accordion-component="AccordionItem" class="accordion__item">
+                                                <div data-accordion-component="AccordionItemHeading" role="heading" class="accordion__heading" aria-level="3">
+                                                    <div class="accordion__button" id="accordion__heading-f" aria-disabled="false" aria-expanded="true" aria-controls="accordion__panel-f" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
+                                                        <span>Transportation Accessibility</span>
+                                                    </div>
+                                                </div>
+                                                <div data-accordion-component="AccordionItemPanel" class="accordion__panel" role="region" aria-labelledby="accordion__heading-f" id="accordion__panel-f">
+                                                    <p>The location of SMDC Shore 2 Pasay provides convenient transportation options. It is near major roads and highways, making it accessible to various parts of Metro Manila. Additionally, the development is close to the Ninoy Aquino International Airport, which is a significant advantage for frequent travelers.</p>
+                                                </div>
+                                            </div>
+                                            <div data-accordion-component="AccordionItem" class="accordion__item">
+                                                <div data-accordion-component="AccordionItemHeading" role="heading" class="accordion__heading" aria-level="3">
+                                                    <div class="accordion__button" id="accordion__heading-g" aria-disabled="false" aria-expanded="true" aria-controls="accordion__panel-g" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
+                                                        <span>Nearby Establishments</span>
+                                                    </div>
+                                                </div>
+                                                <div data-accordion-component="AccordionItemPanel" class="accordion__panel" role="region" aria-labelledby="accordion__heading-g" id="accordion__panel-g">
+                                                    <p>Aside from the Mall of Asia, SMDC Shore 2 Pasay is also near other key establishments such as the SMX Convention Center, the Cultural Center of the Philippines, and the Philippine International Convention Center. Residents have easy access to cultural events, exhibitions, and conventions happening in the area.</p>
+                                                </div>
+                                            </div>
+                                            <div data-accordion-component="AccordionItem" class="accordion__item">
+                                                <div data-accordion-component="AccordionItemHeading" role="heading" class="accordion__heading" aria-level="3">
+                                                    <div class="accordion__button" id="accordion__heading-h" aria-disabled="false" aria-expanded="true" aria-controls="accordion__panel-h" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
+                                                        <span>Investment Potential</span>
+                                                    </div>
+                                                </div>
+                                                <div data-accordion-component="AccordionItemPanel" class="accordion__panel" role="region" aria-labelledby="accordion__heading-h" id="accordion__panel-h">
+                                                    <p>SMDC Shore 2 Pasay offers a potential investment opportunity for buyers. The proximity to popular destinations, such as the Mall of Asia and the airport, can attract tenants and ensure a steady rental income. The development's location within the thriving Mall of Asia Complex also contributes to its investment potential.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="content" id="tab_2_content">
                         <div class="products-description">
-                            <ul class="additional-information">
-                                <li><span>Rent Cost</span> 40,000 monthly</li>
-                                <li><span>Daily Rent</span>3,500 daily 24 hrs</li>
-                                <li><span>Type</span>Fully Furnished</li>
-                                <li><span>Bedroom</span>2 Bedrooms</li>
-                                <li><span>Bathroom</span>1 Toilet and Bath</li>
-                            </ul>
+                             <div class="row">
+                                <div class="col-sm">
+                                    <span class="material-symbols-outlined">location_on</span>
+                                    <p>Location<br>Mall of Asia, Pasay City</p>
+                                </div>
+                                <div class="col-sm">
+                                    <span class="material-symbols-outlined">payments</span>
+                                    <p>Rent Cost<br>₱40,000 monthly<br>₱3,500 daily</p>
+                                </div>
+                                <div class="col-sm">
+                                    <span class="material-symbols-outlined">bed</span>
+                                    <p>Units<br>2-Bedroom Suite with Garden<br>1-Bedroom Unit with Balcony</p>
+                                </div>
+                                <div class="col-sm">
+                                    <span class="material-symbols-outlined">shower</span>
+                                    <p>Amenities<br>1 Toilet and Bathroom<br>Lounge Pool<br>Lap Pool<br>Kiddie Pool</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -174,159 +288,8 @@
                                     </svg>
                                 </div>
 
-                                <div class="star-rating">
-                                    <input type="radio" name="star" id="five">
-                                    <label for="five">
-                                        <svg class="star">
-                                            <use xlink:href="#star" />
-                                        </svg>
-                                    </label>
-
-                                    <input type="radio" name="star" id="four">
-                                    <label for="four">
-                                        <svg class="star">
-                                            <use xlink:href="#star" />
-                                        </svg>
-                                    </label>
-
-                                    <input type="radio" name="star" id="three">
-                                    <label for="three">
-                                        <svg class="star">
-                                            <use xlink:href="#star" />
-                                        </svg>
-                                    </label>
-
-                                    <input type="radio" name="star" id="two">
-                                    <label for="two">
-                                        <svg class="star">
-                                            <use xlink:href="#star" />
-                                        </svg>
-                                    </label>
-
-                                    <input type="radio" name="star" id="one">
-                                    <label for="one">
-                                        <svg class="star">
-                                            <use xlink:href="#star" />
-                                        </svg>
-                                    </label>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <textarea name="review-message" id="message" cols="30" rows="4" placeholder="Write your review*" class="form-control"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" placeholder="Name*" class="form-control">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="form-group">
-                                            <input type="email" placeholder="Email*" class="form-control">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12 col-md-12">
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                    </div>
-                                </div>
                             </form>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--More Details in Accordion-->
-<div class="faq-area ptb-80">
-    <div class="container">
-        <div class="faq-accordion">
-            <div data-accordion-component="Accordion" class="accordion">
-                <div data-accordion-component="AccordionItem" class="accordion__item">
-                    <div data-accordion-component="AccordionItemHeading" role="heading" class="accordion__heading" aria-level="3">
-                        <div class="accordion__button" id="accordion__heading-a" aria-disabled="false" aria-expanded="true" aria-controls="accordion__panel-a" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
-                            <span>Where to find?</span>
-                        </div>
-                    </div>
-                    <div data-accordion-component="AccordionItemPanel" class="accordion__panel" role="region" aria-labelledby="accordion__heading-a" id="accordion__panel-a">
-                        <p>SMDC Shore 2 Pasay is situated along Sunrise Drive, Mall of Asia Complex, Pasay City. It is strategically located near Manila Bay, providing residents with stunning views of the bay and its famous sunset.</p>
-                    </div>
-                </div>
-                <div data-accordion-component="AccordionItem" class="accordion__item">
-                    <div data-accordion-component="AccordionItemHeading" role="heading" class="accordion__heading" aria-level="3">
-                        <div class="accordion__button" id="accordion__heading-b" aria-disabled="false" aria-expanded="false" aria-controls="accordion__panel-b" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
-                            <span>About the Developer</span>
-                        </div>
-                    </div>
-                    <div data-accordion-component="AccordionItemPanel" class="accordion__panel" role="region" aria-labelledby="accordion__heading-b" id="accordion__panel-b" hidden="">
-                        <p>The project is developed by SM Development Corporation (SMDC), one of the leading real estate developers in the Philippines. SMDC is known for its high-rise condominium projects that offer modern amenities and prime locations.</p>
-                    </div>
-                </div>
-                <div data-accordion-component="AccordionItem" class="accordion__item">
-                    <div data-accordion-component="AccordionItemHeading" role="heading" class="accordion__heading" aria-level="3">
-                        <div class="accordion__button" id="accordion__heading-c" aria-disabled="false" aria-expanded="false" aria-controls="accordion__panel-c" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
-                            <span>Condominium Features</span>
-                        </div>
-                    </div>
-                    <div data-accordion-component="AccordionItemPanel" class="accordion__panel" role="region" aria-labelledby="accordion__heading-c" id="accordion__panel-c" hidden="">
-                        <p>SMDC Shore 2 Pasay is a high-rise residential condominium with multiple towers. The development offers various unit configurations, including studio, one-bedroom, two-bedroom, and three-bedroom units, catering to different lifestyle needs.</p>
-                    </div>
-                </div>
-                <div data-accordion-component="AccordionItem" class="accordion__item">
-                    <div data-accordion-component="AccordionItemHeading" role="heading" class="accordion__heading" aria-level="3">
-                        <div class="accordion__button" id="accordion__heading-d" aria-disabled="false" aria-expanded="false" aria-controls="accordion__panel-d" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
-                            <span>Amenities</span>
-                        </div>
-                    </div>
-                    <div data-accordion-component="AccordionItemPanel" class="accordion__panel" role="region" aria-labelledby="accordion__heading-d" id="accordion__panel-d" hidden="">
-                        <p>LThe condominium provides a range of amenities to its residents. These may include swimming pools, fitness centers, function rooms, landscaped gardens, children's play areas, jogging paths, and 24-hour security. The specific amenities may vary depending on the project's design and offerings.</p>
-                    </div>
-                </div>
-                <div data-accordion-component="AccordionItem" class="accordion__item">
-                    <div data-accordion-component="AccordionItemHeading" role="heading" class="accordion__heading" aria-level="3">
-                        <div class="accordion__button" id="accordion__heading-e" aria-disabled="false" aria-expanded="false" aria-controls="accordion__panel-e" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
-                            <span>Proximity to Mall of Asia</span>
-                        </div>
-                    </div>
-                    <div data-accordion-component="AccordionItemPanel" class="accordion__panel" role="region" aria-labelledby="accordion__heading-e" id="accordion__panel-e" hidden="">
-                        <p>
-                            SMDC Shore 2 Pasay is located in close proximity to the SM Mall of Asia, one of the largest shopping centers in the Philippines. Residents can enjoy easy access to a wide array of retail shops, restaurants, entertainment options, and cinemas.
-                        </p>
-                    </div>
-                </div>
-                <div data-accordion-component="AccordionItem" class="accordion__item">
-                    <div data-accordion-component="AccordionItemHeading" role="heading" class="accordion__heading" aria-level="3">
-                        <div class="accordion__button" id="accordion__heading-f" aria-disabled="false" aria-expanded="false" aria-controls="accordion__panel-f" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
-                            <span>Transportation Accessibility</span>
-                        </div>
-                    </div>
-                    <div data-accordion-component="AccordionItemPanel" class="accordion__panel" role="region" aria-labelledby="accordion__heading-f" id="accordion__panel-f" hidden="">
-                        <p>The location of SMDC Shore 2 Pasay provides convenient transportation options. It is near major roads and highways, making it accessible to various parts of Metro Manila. Additionally, the development is close to the Ninoy Aquino International Airport, which is a significant advantage for frequent travelers.</p>
-                    </div>
-                </div>
-                <div data-accordion-component="AccordionItem" class="accordion__item">
-                    <div data-accordion-component="AccordionItemHeading" role="heading" class="accordion__heading" aria-level="3">
-                        <div class="accordion__button" id="accordion__heading-g" aria-disabled="false" aria-expanded="false" aria-controls="accordion__panel-g" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
-                            <span>Nearby Establishments</span>
-                        </div>
-                    </div>
-                    <div data-accordion-component="AccordionItemPanel" class="accordion__panel" role="region" aria-labelledby="accordion__heading-g" id="accordion__panel-g" hidden="">
-                        <p>Aside from the Mall of Asia, SMDC Shore 2 Pasay is also near other key establishments such as the SMX Convention Center, the Cultural Center of the Philippines, and the Philippine International Convention Center. Residents have easy access to cultural events, exhibitions, and conventions happening in the area.</p>
-                    </div>
-                </div>
-                <div data-accordion-component="AccordionItem" class="accordion__item">
-                    <div data-accordion-component="AccordionItemHeading" role="heading" class="accordion__heading" aria-level="3">
-                        <div class="accordion__button" id="accordion__heading-h" aria-disabled="false" aria-expanded="false" aria-controls="accordion__panel-h" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
-                            <span>Investment Potential</span>
-                        </div>
-                    </div>
-                    <div data-accordion-component="AccordionItemPanel" class="accordion__panel" role="region" aria-labelledby="accordion__heading-h" id="accordion__panel-h" hidden="">
-                        <p>SMDC Shore 2 Pasay offers a potential investment opportunity for buyers. The proximity to popular destinations, such as the Mall of Asia and the airport, can attract tenants and ensure a steady rental income. The development's location within the thriving Mall of Asia Complex also contributes to its investment potential.</p>
                     </div>
                 </div>
             </div>
