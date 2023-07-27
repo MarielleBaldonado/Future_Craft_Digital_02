@@ -39209,21 +39209,25 @@ th {
     font-size: 24px;
 }
 
-/* Custom Styles*/
+/* Services */
 
 .mt-15 {
-    margin-top: 15rem !important
+    margin-top: 15rem !important;
 }
 .mt-md-15 {
-    margin-top: 5rem !important
+    margin-top: 5rem !important;
 }
 
 .ml-min-1 {
-    margin-left: -33px !important
+    margin-left: -33px !important;
 }
 
 .mb-10 {
-    margin-bottom: 10rem !important
+    margin-bottom: 10rem !important;
+}
+
+.mb-min-1{
+    margin-top: -15rem !important;
 }
 
 /* Cart */
@@ -39269,3 +39273,13 @@ th {
     .item-del-btn:hover {
         color: #990000;
     }
+
+/* Checkout Page */
+
+.top-liner {
+    height: 3px;
+    width: 100%;
+    background-position-x: -30px;
+    background-size: 116px 3px;
+    background-image: repeating-linear-gradient(45deg,#6fa6d6,#6fa6d6 33px,transparent 0,transparent 41px,#f18d9b 0,#f18d9b 74px,transparent 0,transparent 82px);
+}

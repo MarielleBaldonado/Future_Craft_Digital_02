@@ -73,6 +73,11 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        public ActionResult Checkout()
+        {
+            return View();
+        }
+
         // -------------- FOR INSIGHTS ---------------------
 
         public ActionResult Insights()
