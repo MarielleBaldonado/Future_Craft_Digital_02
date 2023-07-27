@@ -39283,3 +39283,7 @@ th {
     background-size: 116px 3px;
     background-image: repeating-linear-gradient(45deg,#6fa6d6,#6fa6d6 33px,transparent 0,transparent 41px,#f18d9b 0,#f18d9b 74px,transparent 0,transparent 82px);
 }
+
+.is-invalid {
+    border-color: red;
+}
