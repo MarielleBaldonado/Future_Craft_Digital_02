@@ -1,0 +1,164 @@
+﻿﻿@{
+    ViewBag.Title = "AvailService";
+}
+
+
+<body>
+    <!-- Page Title Section -->
+    <div class="mt-15 pt-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-12 ">
+                    <div class="ml-banner-content pb-80 text-center">
+                        <h1>Future Craft Digital <br />Avail Our Service</h1>
+                        <h6 class="text-muted">Let us handle your tasks efficiently while you focus on growth.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shape1"><img src="~/assets/img/shape1.png" alt="shape"></div>
+        <div class="shape2 rotateme"><img src="~/assets/img/shape2.svg" alt="shape"></div>
+        <div class="shape3"><img src="~/assets/img/shape3.svg" alt="shape"></div>
+        <div class="shape4"><img src="~/assets/img/shape4.svg" alt="shape"></div>
+        <div class="shape5"><img src="~/assets/img/shape5.png" alt="shape"></div>
+        <div class="shape6 rotateme"><img src="~/assets/img/shape4.svg" alt="shape"></div>
+        <div class="shape7"><img src="~/assets/img/shape4.svg" alt="shape"></div>
+        <div class="shape8 rotateme"><img src="~/assets/img/shape2.svg" alt="shape"></div>
+    </div>
+    <!-- End of Page title Section -->
+    <!-- Start of General information form -->
+    <div class=" d-flex justify-content-center pb-80">
+        <div class="container">
+            <form action="/submit-form" method="post">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="emailInput">Email:</label>
+                            <input type="email" id="emailInput" name="email" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="contactInput">Contact Number:</label>
+                            <input type="tel" id="contactInput" name="contact" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group pb-50">
+                    <label for="categoryInput">Type of Service:</label>
+                    <select id="categoryInput" name="category" class="form-control" required>
+                        <option value="">Select Category</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Software Design and Development">Software Design and Development</option>
+                        <option value="Outsourcing">Outsourcing</option>
+                    </select>
+                </div>
+
+                <div id="marketingDropdown" class="form-group pb-80" style="display: none;">
+                    <label for="marketingInput" class="mr-2">Marketing Type:</label>
+                    <select id="marketingInput" name="marketingType" class="form-control mr-3">
+                        <option value="">Select Marketing Type</option>
+                        <option value="Search Engine Optimization">Search Engine Optimization</option>
+                        <option value="Content Creation">Content Creation</option>
+                        <option value="Digital Marketing">Digital Marketing</option>
+                        <option value="Social Media Management">Social Media Management</option>
+                    </select>
+                    <div class="form-group mt-3">
+                        <label for="orderDnR">Order Details and Requirements:</label>
+                        <textarea name="orderDnR" id="orderDnR" rows="10" cols="50" class="form-control" placeholder="Enter order details here"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary w-25">Submit</button>
+                    </div>
+                </div>
+
+
+                <div id="softwareDropdown" class="form-group" style="display: none;">
+                    <label for="softwareInput">Software Type:</label>
+                    <select id="softwareInput" name="softwareType" class="form-control">
+                        <option value="">Select Software Type</option>
+                        <option value="Website">Website</option>
+                        <option value="Ecommerce">Ecommerce</option>
+                        <option value="POS">POS</option>
+                    </select>
+                    <div class="form-group mt-3">
+                        <label for="orderDnR">Order Details and Requirements:</label>
+                        <textarea name="orderDnR" id="orderDnR" rows="10" cols="50" class="form-control" placeholder="Enter order details here"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary w-25">Submit</button>
+                    </div>
+                </div>
+
+                <div id="outsourcingDropdown" class="form-group" style="display: none;">
+                    <label for="outsourcingType">Outsourcing Type:</label>
+                    <select id="outsourcingType" name="outsourcingType" class="form-control">
+                        <option value="">Select Outsourcing Type</option>
+                        <option value="1">Information Technology (IT) Outsourcing</option>
+                        <option value="2">Business Process Outsourcing (BPO)</option>
+                        <option value="3">Knowledge Process Outsourcing (KPO)</option>
+                    </select>
+                    <div class="form-group mt-3">
+                        <label for="orderDnR">Service Details and Requirements:</label>
+                        <textarea name="orderDnR" id="orderDnR" rows="10" cols="50" class="form-control" placeholder="Enter order details here"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary w-25">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    document.getElementById('categoryInput').addEventListener('change', function () {
+        var marketingDropdown = document.getElementById('marketingDropdown');
+        var softwareDropdown = document.getElementById('softwareDropdown');
+        var outsourcingDropdown = document.getElementById('outsourcingDropdown');
+
+        // Hide both dropdowns initially
+        marketingDropdown.style.display = 'none';
+        softwareDropdown.style.display = 'none';
+        outsourcingDropdown.style.display = 'none';
+
+        // Show the corresponding dropdown based on the selected category
+        if (this.value === 'Marketing') {
+            marketingDropdown.style.display = 'block';
+        } else if (this.value === 'Software Design and Development') {
+            softwareDropdown.style.display = 'block';
+        } else if (this.value === 'Outsourcing') {
+            outsourcingDropdown.style.display = 'block';
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+

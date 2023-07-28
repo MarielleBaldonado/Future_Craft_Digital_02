@@ -33145,7 +33145,11 @@ label {
 
         .agency-services-box:hover .content h3 {
             -webkit-transform: translateY(-10px);
-            transform: translateY(-10px)
+            transform: translateY(-10px);
+        }
+
+        .agency-services-box:hover .content h5 {
+            color: limegreen;
         }
 
         .agency-services-box:hover .content .read-more-btn {

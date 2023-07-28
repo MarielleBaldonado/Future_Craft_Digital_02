@@ -25,6 +25,11 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        public ActionResult AvailService()
+        {
+            return View();
+        }
+
         public ActionResult Marketing()
         {
             return View();
