@@ -1,0 +1,264 @@
+﻿@{
+    ViewBag.Title = "Checkout";
+}
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // When the Confirm button is clicked
+            $("#deliveryAddressModal").on("click", "input[type=submit]", function (e) {
+                var form = $(this).closest("form");
+                var inputs = form.find("input[required]");
+                var invalidInputs = [];
+
+                // Remove any existing error styles and tooltips
+                inputs.removeClass("is-invalid");
+                form.find(".invalid-tooltip").remove();
+
+                // Check for empty fields and apply error styles with tooltips
+                inputs.each(function () {
+                    if ($(this).val().trim() === "") {
+                        $(this).addClass("is-invalid");
+                        invalidInputs.push(this);
+                    }
+                });
+
+                // Add tooltips to the invalid fields
+                invalidInputs.forEach(function (input) {
+                    $(input).tooltip({
+                        title: "Please enter a value.",
+                        placement: "bottom",
+                        trigger: "manual"
+                        }).tooltip("show");
+                });
+
+                // Prevent form submission if there are empty fields
+                if (invalidInputs.length > 0) {
+                    e.preventDefault();
+                }
+            });
+
+            // When a user starts typing in an empty field, remove error styles and tooltip
+            $("#deliveryAddressModal").on("input", "input[required].is-invalid", function () {
+                $(this).removeClass("is-invalid");
+                $(this).tooltip("dispose");
+            });
+        });
+    </script>
+}
+
+
+<!-- Start Page Title -->
+<div class="page-title-area" style="z-index:-1;">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="container" style="user-select:none;">
+                <h1>Checkout</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="shape1"><img src="~/assets/img/shape1.png" alt="shape"></div>
+    <div class="shape2 rotateme"><img src="~/assets/img/shape2.svg" alt="shape"></div>
+    <div class="shape3"><img src="~/assets/img/shape3.svg" alt="shape"></div>
+    <div class="shape4"><img src="~/assets/img/shape4.svg" alt="shape"></div>
+    <div class="shape5"><img src="~/assets/img/shape5.png" alt="shape"></div>
+    <div class="shape6 rotateme"><img src="~/assets/img/shape4.svg" alt="shape"></div>
+    <div class="shape7"><img src="~/assets/img/shape4.svg" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="~/assets/img/shape2.svg" alt="shape"></div>
+</div>
+<!-- End Page Title -->
+<!-- Checkout Main -->
+<div>
+    <!-- Delivery address -->
+    <div class="main-container mb-3" style="margin-top:0;z-index:100;">
+        <div class="container">
+            <div class="top-liner"></div>
+            <div class="d-flex bg-white" style="box-shadow: 1px 1px 10px rgba(0,102,102,0.2);">
+                <div class="d-flex flex-column flex-grow-1 px-4 py-2 justify-content-center" style="user-select: none;">
+                    <div class="d-flex mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                        </svg>
+                        <h6 class="m-0 ms-2">Delivery Address</h6>
+                    </div>
+                    <p class="m-0 fw-bold">Juan Dela Cruz (+63) 9123456789</p>
+                    <p class="fw-light m-0">Apt. 577 811 Johnston Knolls, New Ethel, NC 89610</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center p-5">
+                    <a class="m-0 text-danger" href="" data-bs-toggle="modal" data-bs-target="#deliveryAddressModal">Change</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Products ordered -->
+    <div class="main-container mb-3" style="margin-top:0;z-index:100;">
+        <div class="container text-center">
+            <div class="bg-white w-100 m-0 pt-4 pb-3 px-3" style="box-shadow: 1px 1px 10px rgba(0,102,102,0.2);user-select: none;">
+                <!-- Table Header -->
+                <div class="row bg-white m-0 mb-3">
+                    <div class="col-6 text-left">
+                        <h5 class="m-0 fw-normal">Products Ordered</h5>
+                    </div>
+                    <div class="col-2">
+                        <h6 class="m-0 fw-normal" style="color:#6084a4">Unit Price</h6>
+                    </div>
+                    <div class="col-2">
+                        <h6 class="m-0 fw-normal" style="color:#6084a4">Amount</h6>
+                    </div>
+                    <div class="col text-right">
+                        <h6 class="m-0 fw-normal" style="color:#6084a4">Item Subtotal</h6>
+                    </div>
+                </div>
+                <!-- Table Body -->
+                <div class="row bg-white m-0 my-4">
+                    <div class="col-6 text-left">
+                        <div class="d-flex m-0 fw-normal">
+                            <div class="item-img d-flex justify-content-center align-items-center" style="width:25px;height:25px;">
+                                <img class="w-100" src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office 2019">
+                            </div>
+                            <p class="m-0 text-black ms-2">Microsoft Office 2019</p>
+                        </div>
+                    </div>
+                    <div class="col-2 text-center">
+                        <p class="m-0 text-black fw-normal" style="color:#6084a4;">₱100.00</p>
+                    </div>
+                    <div class="col-2 text-center">
+                        <p class="m-0 text-black fw-normal" style="color:#6084a4;">1</p>
+                    </div>
+                    <div class="col text-right">
+                        <p class="m-0 text-black fw-normal" style="color:#6084a4;">₱100.00</p>
+                    </div>
+                </div>
+                <div class="row bg-white m-0 my-4">
+                    <div class="col-6 text-left">
+                        <div class="d-flex m-0 fw-normal">
+                            <div class="item-img d-flex justify-content-center align-items-center" style="width:25px;height:25px;">
+                                <img class="w-100" src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office 2019">
+                            </div>
+                            <p class="m-0 text-black ms-2">Microsoft Office 2019</p>
+                        </div>
+                    </div>
+                    <div class="col-2 text-center">
+                        <p class="m-0 text-black fw-normal" style="color:#6084a4;">₱100.00</p>
+                    </div>
+                    <div class="col-2 text-center">
+                        <p class="m-0 text-black fw-normal" style="color:#6084a4;">1</p>
+                    </div>
+                    <div class="col text-right">
+                        <p class="m-0 text-black fw-normal" style="color:#6084a4;">₱100.00</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment method -->
+    <div class="main-container mb-5" style="margin-top:0;z-index:100;">
+        <div class="container">
+            <div class="bg-white m-0 py-4 px-4 d-flex" style="box-shadow: 1px 1px 10px rgba(0,102,102,0.2);user-select: none;">
+                <div class="d-flex flex-column w-50 me-5">
+                    <h5 class="m-0 mb-4">Payment Method</h5>
+                    <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
+                        <label class="btn btn-outline-secondary" for="vbtn-radio1">
+                            <img class="card-icon me-2" style="width:24px;" src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1ZP8kM1T2gK0jSZFvXXXnFXXa-96-96.png_2200x2200q75.png_.webp">
+                            Cash on Delivery
+                        </label>
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
+                        <label class="btn btn-outline-secondary" for="vbtn-radio2">
+                            <img class="card-icon me-2 rounded-2" style="width:24px;" src="https://play-lh.googleusercontent.com/QNP0Aj2hyumAmYiWVAsJtY2LLTQnzHxdW7-DpwFUFNkPJjgRxi-BXg7A4yI6tgYKMeU">
+                            GCash
+                        </label>
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
+                        <label class="btn btn-outline-secondary" for="vbtn-radio3">
+                            <img class="card-icon me-2 rounded-2" style="width:34px;" src="https://manilastandard.net/wp-content/uploads/2022/05/maya.jpg">
+                            Maya
+                        </label>
+                    </div>
+                </div>
+                <div class="w-50 d-flex flex-column">
+                    <h5 class="m-0 mb-3">Order Summary</h5>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex justify-content-between mb-2">
+                            <p class="text-black m-0">Subtotal:</p>
+                            <p class="m-0">₱100.00</p>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <p class="text-black m-0">Shipping Total:</p>
+                            <p class="m-0">₱0.00</p>
+                        </div>
+                        <div class="d-flex justify-content-between mb-4">
+                            <p class="text-black m-0">Total Payment:</p>
+                            <h4 class="m-0 text-success fw-bold">₱100.00</h4>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-primary">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Change Delivery Address Model -->
+<div class="modal fade" id="deliveryAddressModal" tabindex="-1" aria-labelledby="deliveryAddressModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-3">
+            <div class="modal-header" style="user-select: none;">
+                <h5 class="modal-title">Change Address</h5>
+            </div>
+            <div class="modal-body">
+                <form class="needs-validation" autocomplete="on">
+                    <div class="row g-2 mb-2">
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="fullNameInput" placeholder="Enter name" required>
+                                <label for="fullNameInput" class="form-label fw-normal">Full Name</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="phoneNumberInput" placeholder="Enter phone number" required>
+                                <label for="phoneNumberInput" class="form-label fw-normal">Phone Number</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="addressInput" placeholder="" required>
+                                <label for="addressInput" class="form-label fw-normal">Region, Province, City, Barangay</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="postalCodeInput" placeholder="" required>
+                                <label for="postalCodeInput" class="form-label fw-normal">Postal Code</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="streetAddressInput" placeholder="" required>
+                                <label for="streetAddressInput" class="form-label fw-normal">Street Name, Building, House No.</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col d-flex justify-content-end">
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                            <input class="btn btn-primary ms-3" type="submit" value="Confirm">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

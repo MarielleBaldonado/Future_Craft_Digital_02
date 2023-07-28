@@ -25,32 +25,48 @@
 @* Cart *@
 <div>
     <!--Table-->
-    <div class="main-container" style="margin-top:0;z-index:100;">
+    <div class="main-container mb-5" style="margin-top:0;z-index:100;">
         <div class="container text-center">
             <!--THeader-->
-            <div class="row row-cols-5 border border-1 justify-content-evenly py-3 bg-white cart-header">
+            <div class="row row-cols-6 border border-1 justify-content-evenly py-3 bg-white cart-header">
                 <div class="col form-check d-flex align-items-center justify-content-center m-0" style="width:20px;">
                     <input type="checkbox" id="selectAll" class="form-check-input m-0" />
                 </div>
-                <div class="col-3 d-flex align-items-center justify-content-center m-0">
+                <div class="col-3 d-flex align-items-center justify-content-start m-0">
                     <h5 class="m-0">Product</h5>
                 </div>
                 <div class="col d-flex align-items-center justify-content-center m-0">
-                    <h5 class="m-0">Price</h5>
+                    <h5 class="m-0">Unit Price</h5>
                 </div>
                 <div class="col d-flex align-items-center justify-content-center m-0">
                     <h5 class="m-0">Quantity</h5>
                 </div>
-                <div class="col m-0"></div>
+                <div class="col d-flex align-items-center justify-content-center m-0">
+                    <h5 class="m-0">Total Price</h5>
+                </div>
+                <div class="col m-0 d-flex align-items-center justify-content-center">
+                    <button class="item-del-btn" style="display: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                        </svg>
+                    </button>
+                </div>
             </div>
             <hr class="w-0 m-0 mb-1" style="background: none; color: transparent;">
-            <!--Tbody-->
-            <div class="row row-cols-5 align-items-center justify-content-center" style="display:none;"></div>
-            <div class="row row-cols-5 justify-content-evenly py-4">
+            <!--Whitespace-->
+            <div class="row row-cols-6 align-items-center justify-content-center" style="display:none;"></div>
+            <!--Table Body-->
+            @* if the cart is empty *@
+            <div class="row align-items-center justify-content-evenly py-4" style="height: 11.5rem; display: none;">
+                <h6 class="fw-normal" style="color: gray;">There are no items in this cart</h6>
+            </div>
+            @* else *@
+            <div class="row row-cols-6 justify-content-evenly py-4">
                 <div class="col form-check d-flex align-items-center justify-content-center m-0" style="width:20px;">
                     <input type="checkbox" class="form-check-input m-0" />
                 </div>
-                <div class="col-3 d-flex align-items-center justify-content-center m-0" style="user-select:none;">
+                <div class="col-3 d-flex align-items-center justify-content-start m-0" style="user-select:none;">
                     <div class="item-img" style="width:30px;height:30px;">
                         <img class="w-100" src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office 2019">
                     </div>
@@ -68,6 +84,451 @@
                         <p class="m-0">+</p>
                     </button>
                 </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="item-del-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="row row-cols-6 justify-content-evenly py-4">
+                <div class="col form-check d-flex align-items-center justify-content-center m-0" style="width:20px;">
+                    <input type="checkbox" class="form-check-input m-0" />
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-start m-0" style="user-select:none;">
+                    <div class="item-img" style="width:30px;height:30px;">
+                        <img class="w-100" src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office 2019">
+                    </div>
+                    <p class="ms-1">Microsoft Office 2019</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="qty-btn qty-dec">
+                        <p class="m-0">-</p>
+                    </button>
+                    <p class="m-0 mx-2" style="user-select:none;">1</p>
+                    <button class="qty-btn qty-inc">
+                        <p class="m-0">+</p>
+                    </button>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="item-del-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="row row-cols-6 justify-content-evenly py-4">
+                <div class="col form-check d-flex align-items-center justify-content-center m-0" style="width:20px;">
+                    <input type="checkbox" class="form-check-input m-0" />
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-start m-0" style="user-select:none;">
+                    <div class="item-img" style="width:30px;height:30px;">
+                        <img class="w-100" src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office 2019">
+                    </div>
+                    <p class="ms-1">Microsoft Office 2019</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="qty-btn qty-dec">
+                        <p class="m-0">-</p>
+                    </button>
+                    <p class="m-0 mx-2" style="user-select:none;">1</p>
+                    <button class="qty-btn qty-inc">
+                        <p class="m-0">+</p>
+                    </button>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="item-del-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="row row-cols-6 justify-content-evenly py-4">
+                <div class="col form-check d-flex align-items-center justify-content-center m-0" style="width:20px;">
+                    <input type="checkbox" class="form-check-input m-0" />
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-start m-0" style="user-select:none;">
+                    <div class="item-img" style="width:30px;height:30px;">
+                        <img class="w-100" src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office 2019">
+                    </div>
+                    <p class="ms-1">Microsoft Office 2019</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="qty-btn qty-dec">
+                        <p class="m-0">-</p>
+                    </button>
+                    <p class="m-0 mx-2" style="user-select:none;">1</p>
+                    <button class="qty-btn qty-inc">
+                        <p class="m-0">+</p>
+                    </button>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="item-del-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="row row-cols-6 justify-content-evenly py-4">
+                <div class="col form-check d-flex align-items-center justify-content-center m-0" style="width:20px;">
+                    <input type="checkbox" class="form-check-input m-0" />
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-start m-0" style="user-select:none;">
+                    <div class="item-img" style="width:30px;height:30px;">
+                        <img class="w-100" src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office 2019">
+                    </div>
+                    <p class="ms-1">Microsoft Office 2019</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="qty-btn qty-dec">
+                        <p class="m-0">-</p>
+                    </button>
+                    <p class="m-0 mx-2" style="user-select:none;">1</p>
+                    <button class="qty-btn qty-inc">
+                        <p class="m-0">+</p>
+                    </button>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="item-del-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="row row-cols-6 justify-content-evenly py-4">
+                <div class="col form-check d-flex align-items-center justify-content-center m-0" style="width:20px;">
+                    <input type="checkbox" class="form-check-input m-0" />
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-start m-0" style="user-select:none;">
+                    <div class="item-img" style="width:30px;height:30px;">
+                        <img class="w-100" src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office 2019">
+                    </div>
+                    <p class="ms-1">Microsoft Office 2019</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="qty-btn qty-dec">
+                        <p class="m-0">-</p>
+                    </button>
+                    <p class="m-0 mx-2" style="user-select:none;">1</p>
+                    <button class="qty-btn qty-inc">
+                        <p class="m-0">+</p>
+                    </button>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="item-del-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="row row-cols-6 justify-content-evenly py-4">
+                <div class="col form-check d-flex align-items-center justify-content-center m-0" style="width:20px;">
+                    <input type="checkbox" class="form-check-input m-0" />
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-start m-0" style="user-select:none;">
+                    <div class="item-img" style="width:30px;height:30px;">
+                        <img class="w-100" src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office 2019">
+                    </div>
+                    <p class="ms-1">Microsoft Office 2019</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="qty-btn qty-dec">
+                        <p class="m-0">-</p>
+                    </button>
+                    <p class="m-0 mx-2" style="user-select:none;">1</p>
+                    <button class="qty-btn qty-inc">
+                        <p class="m-0">+</p>
+                    </button>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="item-del-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="row row-cols-6 justify-content-evenly py-4">
+                <div class="col form-check d-flex align-items-center justify-content-center m-0" style="width:20px;">
+                    <input type="checkbox" class="form-check-input m-0" />
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-start m-0" style="user-select:none;">
+                    <div class="item-img" style="width:30px;height:30px;">
+                        <img class="w-100" src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office 2019">
+                    </div>
+                    <p class="ms-1">Microsoft Office 2019</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="qty-btn qty-dec">
+                        <p class="m-0">-</p>
+                    </button>
+                    <p class="m-0 mx-2" style="user-select:none;">1</p>
+                    <button class="qty-btn qty-inc">
+                        <p class="m-0">+</p>
+                    </button>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="item-del-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="row row-cols-6 justify-content-evenly py-4">
+                <div class="col form-check d-flex align-items-center justify-content-center m-0" style="width:20px;">
+                    <input type="checkbox" class="form-check-input m-0" />
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-start m-0" style="user-select:none;">
+                    <div class="item-img" style="width:30px;height:30px;">
+                        <img class="w-100" src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office 2019">
+                    </div>
+                    <p class="ms-1">Microsoft Office 2019</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="qty-btn qty-dec">
+                        <p class="m-0">-</p>
+                    </button>
+                    <p class="m-0 mx-2" style="user-select:none;">1</p>
+                    <button class="qty-btn qty-inc">
+                        <p class="m-0">+</p>
+                    </button>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="item-del-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="row row-cols-6 justify-content-evenly py-4">
+                <div class="col form-check d-flex align-items-center justify-content-center m-0" style="width:20px;">
+                    <input type="checkbox" class="form-check-input m-0" />
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-start m-0" style="user-select:none;">
+                    <div class="item-img" style="width:30px;height:30px;">
+                        <img class="w-100" src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office 2019">
+                    </div>
+                    <p class="ms-1">Microsoft Office 2019</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="qty-btn qty-dec">
+                        <p class="m-0">-</p>
+                    </button>
+                    <p class="m-0 mx-2" style="user-select:none;">1</p>
+                    <button class="qty-btn qty-inc">
+                        <p class="m-0">+</p>
+                    </button>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="item-del-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="row row-cols-6 justify-content-evenly py-4">
+                <div class="col form-check d-flex align-items-center justify-content-center m-0" style="width:20px;">
+                    <input type="checkbox" class="form-check-input m-0" />
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-start m-0" style="user-select:none;">
+                    <div class="item-img" style="width:30px;height:30px;">
+                        <img class="w-100" src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office 2019">
+                    </div>
+                    <p class="ms-1">Microsoft Office 2019</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="qty-btn qty-dec">
+                        <p class="m-0">-</p>
+                    </button>
+                    <p class="m-0 mx-2" style="user-select:none;">1</p>
+                    <button class="qty-btn qty-inc">
+                        <p class="m-0">+</p>
+                    </button>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="item-del-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="row row-cols-6 justify-content-evenly py-4">
+                <div class="col form-check d-flex align-items-center justify-content-center m-0" style="width:20px;">
+                    <input type="checkbox" class="form-check-input m-0" />
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-start m-0" style="user-select:none;">
+                    <div class="item-img" style="width:30px;height:30px;">
+                        <img class="w-100" src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office 2019">
+                    </div>
+                    <p class="ms-1">Microsoft Office 2019</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="qty-btn qty-dec">
+                        <p class="m-0">-</p>
+                    </button>
+                    <p class="m-0 mx-2" style="user-select:none;">1</p>
+                    <button class="qty-btn qty-inc">
+                        <p class="m-0">+</p>
+                    </button>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="item-del-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="row row-cols-6 justify-content-evenly py-4">
+                <div class="col form-check d-flex align-items-center justify-content-center m-0" style="width:20px;">
+                    <input type="checkbox" class="form-check-input m-0" />
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-start m-0" style="user-select:none;">
+                    <div class="item-img" style="width:30px;height:30px;">
+                        <img class="w-100" src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office 2019">
+                    </div>
+                    <p class="ms-1">Microsoft Office 2019</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="qty-btn qty-dec">
+                        <p class="m-0">-</p>
+                    </button>
+                    <p class="m-0 mx-2" style="user-select:none;">1</p>
+                    <button class="qty-btn qty-inc">
+                        <p class="m-0">+</p>
+                    </button>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="item-del-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="row row-cols-6 justify-content-evenly py-4">
+                <div class="col form-check d-flex align-items-center justify-content-center m-0" style="width:20px;">
+                    <input type="checkbox" class="form-check-input m-0" />
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-start m-0" style="user-select:none;">
+                    <div class="item-img" style="width:30px;height:30px;">
+                        <img class="w-100" src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office 2019">
+                    </div>
+                    <p class="ms-1">Microsoft Office 2019</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="qty-btn qty-dec">
+                        <p class="m-0">-</p>
+                    </button>
+                    <p class="m-0 mx-2" style="user-select:none;">1</p>
+                    <button class="qty-btn qty-inc">
+                        <p class="m-0">+</p>
+                    </button>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center" style="user-select:none;">
+                    <p>100.00</p>
+                </div>
                 <div class="col d-flex align-items-center justify-content-center">
                     <button class="item-del-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
@@ -81,6 +542,30 @@
         </div>
     </div>
 
-    <!--Table-->
-
+    <!--Cart Summary-->
+    <div class="main-container mb-4" style="margin-top:0;z-index:101;">
+        <div class="container d-flex flex-column p-5 rounded" style="box-shadow: 1px 1px 10px rgba(0,102,102,0.2);">
+            <div class="summary-title mb-4 d-flex justify-content-between" style="user-select: none;">
+                <h4 class="m-0">Order Summary</h4>
+                <p style="margin-right:3rem;">1 item</p>
+            </div>
+            <div class="summary-totals-info d-flex flex-column border border-1 p-4 mb-4 rounded" style="user-select: none;">
+                <div class="subtotal-row d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="m-0 fw-normal">Subtotal</h6>
+                    <h6 class="m-0 fw-normal" style="color: #6084a4;">₱100.00</h6>
+                </div>
+                <div class="shipping-row d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="m-0 fw-normal">Shipping fee</h6>
+                    <h6 class="m-0 fw-normal" style="color: #6084a4;">₱0.00</h6>
+                </div>
+                <div class="total-row d-flex align-items-center justify-content-between">
+                    <h6 class="m-0 fw-normal">Total</h6>
+                    <h6 class="m-0 fw-bolder" style="color: #6084a4;">₱100.00</h6>
+                </div>
+            </div>
+            <div class="summary-checkout mb-0 text-right">
+                <a class="btn btn-primary" href="@Url.Action("Checkout", "Home")">PROCEED TO CHECKOUT</a>
+            </div>
+        </div>
+    </div>
 </div>
