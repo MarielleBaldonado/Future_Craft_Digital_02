@@ -175,6 +175,10 @@
     <Content Include="Assets\img\fcd3.png" />
     <Content Include="Assets\img\fcd4.jpg" />
     <Content Include="Assets\img\footer.png" />
+    <Content Include="Assets\img\icons\icon4.png" />
+    <Content Include="Assets\img\icons\icon5.png" />
+    <Content Include="Assets\img\icons\icon6.png" />
+    <Content Include="Assets\img\icons\icon7.png" />
     <Content Include="Assets\img\layer.png" />
     <Content Include="Assets\img\logo2.png" />
     <Content Include="Assets\img\map.png" />
@@ -222,6 +226,8 @@
     <Content Include="Assets\img\services-left-image\developer.png" />
     <Content Include="Assets\img\services-left-image\flower-top.png" />
     <Content Include="Assets\img\services-left-image\service-image1.png" />
+    <Content Include="Assets\img\services-left-image\service-image2.png" />
+    <Content Include="Assets\img\services-left-image\service-image3.png" />
     <Content Include="Assets\img\services-left-image\service-image4.png" />
     <Content Include="Assets\img\services-left-image\service-image5.png" />
     <Content Include="Assets\img\services-left-image\service-image6.png" />
@@ -383,6 +389,7 @@
     <Content Include="Views\Home\Marketing.cshtml" />
     <Content Include="Views\Home\Outsourcing.cshtml" />
     <Content Include="Views\Home\Cart.cshtml" />
+    <Content Include="Views\Home\AvailService.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
