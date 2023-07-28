@@ -149,8 +149,10 @@
     <Content Include="Assets\img\banner-image\flower-top-big.png" />
     <Content Include="Assets\img\banner-image\flower-top.png" />
     <Content Include="Assets\img\banner-image\headphone.png" />
+    <Content Include="Assets\img\banner-image\hosting-static-main.png" />
     <Content Include="Assets\img\banner-image\keyboard.png" />
     <Content Include="Assets\img\banner-image\main-pic.png" />
+    <Content Include="Assets\img\banner-image\main-static.png" />
     <Content Include="Assets\img\banner-image\man.png" />
     <Content Include="Assets\img\banner-image\pen.png" />
     <Content Include="Assets\img\banner-image\table.png" />
