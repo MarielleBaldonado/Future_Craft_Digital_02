@@ -92,13 +92,26 @@
                                         <li class="nav-item">
                                             <a class="nav-link" href="@Url.Action("Outsourcing", "Home")">
                                                 Outsourcing Solutions
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <polyline points="9 6 15 12 9 18"></polyline>
+                                                </svg>
                                             </a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="@Url.Action("Outsourcing", "Home")#ITOsec">Information Technology Outsourcing</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="@Url.Action("Outsourcing", "Home")#BPOsec">Business Process Outsourcing</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="@Url.Action("Outsourcing", "Home")#KPOsec">Knowledge Process Outsourcing</a>
+                                            </ul>
                                         </li>
                                     </ul>
                                 </li>
                             <!-- Product Menu Item with Dropdown -->
                             <li class="nav-item">
-                                <a class="nav-link" href="/#">
+                                <a class="nav-link" href="@Url.Action("Index", "Home")#productSummary">
                                     Product
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <polyline points="6 9 12 15 18 9"></polyline>

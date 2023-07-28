@@ -2609,3 +2609,11 @@
   }
 }
 /*# sourceMappingURL=responsive.css.map */
+
+.content h3 {
+    color: #6c757d;
+}
+
+.content:hover h3 {
+    color: #007bff;
+}
