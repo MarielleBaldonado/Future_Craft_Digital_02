@@ -5,6 +5,14 @@
 @section Scripts {
     <script>
         $(document).ready(function () {
+            // Function to remove error styles and tooltips
+            function removeErrorStyles() {
+                var form = $("#deliveryAddressModal form");
+                var inputs = form.find("input[required]");
+                inputs.removeClass("is-invalid");
+                form.find(".invalid-tooltip").remove();
+            }
+
             // When the Confirm button is clicked
             $("#deliveryAddressModal").on("click", "input[type=submit]", function (e) {
                 var form = $(this).closest("form");
@@ -29,13 +37,19 @@
                         title: "Please enter a value.",
                         placement: "bottom",
                         trigger: "manual"
-                        }).tooltip("show");
+                    }).tooltip("show");
                 });
 
                 // Prevent form submission if there are empty fields
                 if (invalidInputs.length > 0) {
                     e.preventDefault();
                 }
+            });
+
+            // When the modal is closed
+            $("#deliveryAddressModal").on("hidden.bs.modal", function () {
+                // Remove error styles and tooltips
+                removeErrorStyles();
             });
 
             // When a user starts typing in an empty field, remove error styles and tooltip
@@ -75,18 +89,26 @@
         <div class="container">
             <div class="top-liner"></div>
             <div class="d-flex bg-white" style="box-shadow: 1px 1px 10px rgba(0,102,102,0.2);">
-                <div class="d-flex flex-column flex-grow-1 px-4 py-2 justify-content-center" style="user-select: none;">
+                <div class="d-flex flex-column flex-grow-1 px-md-4 py-md-2 py-3 ps-3 pe-0 justify-content-center" style="user-select: none;">
                     <div class="d-flex mb-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill text-danger" viewBox="0 0 16 16">
                             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
                         </svg>
                         <h6 class="m-0 ms-2">Delivery Address</h6>
                     </div>
-                    <p class="m-0 fw-bold">Juan Dela Cruz (+63) 9123456789</p>
+                    @* This two p's will be displayed according to the device size *@
+                    <p class="m-0 fw-bold d-none d-md-block">Juan Dela Cruz (+63) 9123456789</p>
+                    <p class="m-0 fw-normal d-md-none ">Juan Dela Cruz (+63) 9123456789</p>
+
                     <p class="fw-light m-0">Apt. 577 811 Johnston Knolls, New Ethel, NC 89610</p>
                 </div>
-                <div class="d-flex align-items-center justify-content-center p-5">
-                    <a class="m-0 text-danger" href="" data-bs-toggle="modal" data-bs-target="#deliveryAddressModal">Change</a>
+                <div class="d-flex align-items-center justify-content-center p-md-5 p-3 pe-2">
+                    <a class="d-md-none m-0 text-danger" href="" data-bs-toggle="modal" data-bs-target="#deliveryAddressModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-right fw-bold" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </a>
+                    <a class="m-0 text-danger d-none d-md-inline" href="" data-bs-toggle="modal" data-bs-target="#deliveryAddressModal">Change</a>
                 </div>
             </div>
         </div>
@@ -99,54 +121,80 @@
                 <!-- Table Header -->
                 <div class="row bg-white m-0 mb-3">
                     <div class="col-6 text-left">
-                        <h5 class="m-0 fw-normal">Products Ordered</h5>
+                        <h5 class="m-0 fw-normal d-none d-md-block">Products Ordered</h5>
+                        <p class="m-0 fw-normal d-md-none">2 items</p>
                     </div>
-                    <div class="col-2">
+                    <div class="col-2 d-none d-md-grid">
                         <h6 class="m-0 fw-normal" style="color:#6084a4">Unit Price</h6>
                     </div>
-                    <div class="col-2">
+                    <div class="col-2 d-none d-md-grid">
                         <h6 class="m-0 fw-normal" style="color:#6084a4">Amount</h6>
                     </div>
-                    <div class="col text-right">
-                        <h6 class="m-0 fw-normal" style="color:#6084a4">Item Subtotal</h6>
+                    <div class="col text-right d-none d-md-grid">
+                        <h6 class="m-0 fw-normal d-none d-lg-block" style="color:#6084a4">Item Subtotal</h6>
+                        <h6 class="m-0 fw-normal d-lg-none" style="color:#6084a4">Subtotal</h6>
                     </div>
                 </div>
                 <!-- Table Body -->
                 <div class="row bg-white m-0 my-4">
-                    <div class="col-6 text-left">
+                    @* This is for the SMALLER devices. *@
+                    <div class="col-2 d-grid d-md-none p-0">
+                        <img class="img-thumbnail border-0 p-0" src="../assets/img/shop-image/software/microsoft-office.png" alt="">
+                    </div>
+                    <div class="col d-md-none d-flex flex-column justify-content-center">
+                        <p class="m-0 text-black text-left text-truncate">Microsoft Office 2019</p>
+                        <div class="d-flex justify-content-between mt-2">
+                            <p class="m-0">₱100.00</p>
+                            <p class="m-0 fw-light">x1</p>
+                        </div>
+                    </div>
+                    @* This is for the MEDIUM up to LARGER devices *@
+                    <div class="col-6 text-left d-none d-md-grid">
                         <div class="d-flex m-0 fw-normal">
                             <div class="item-img d-flex justify-content-center align-items-center" style="width:25px;height:25px;">
-                                <img class="w-100" src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office 2019">
+                                <img class="w-100" src="../assets/img/shop-image/software/microsoft-office.png" alt="">
                             </div>
                             <p class="m-0 text-black ms-2">Microsoft Office 2019</p>
                         </div>
                     </div>
-                    <div class="col-2 text-center">
+                    <div class="col-2 text-center d-none d-md-grid">
                         <p class="m-0 text-black fw-normal" style="color:#6084a4;">₱100.00</p>
                     </div>
-                    <div class="col-2 text-center">
+                    <div class="col-2 text-center d-none d-md-grid">
                         <p class="m-0 text-black fw-normal" style="color:#6084a4;">1</p>
                     </div>
-                    <div class="col text-right">
+                    <div class="col text-right d-none d-md-grid">
                         <p class="m-0 text-black fw-normal" style="color:#6084a4;">₱100.00</p>
                     </div>
                 </div>
                 <div class="row bg-white m-0 my-4">
-                    <div class="col-6 text-left">
+                    @* This is for the SMALLER devices. *@
+                    <div class="col-2 d-grid d-md-none p-0">
+                        <img class="img-thumbnail border-0 p-0" src="../assets/img/shop-image/software/microsoft-office.png" alt="">
+                    </div>
+                    <div class="col d-md-none d-flex flex-column justify-content-center">
+                        <p class="m-0 text-black text-left text-truncate">Microsoft Office 2019</p>
+                        <div class="d-flex justify-content-between mt-2">
+                            <p class="m-0">₱100.00</p>
+                            <p class="m-0 fw-light">x1</p>
+                        </div>
+                    </div>
+                    @* This is for the MEDIUM up to LARGER devices *@
+                    <div class="col-6 text-left d-none d-md-grid">
                         <div class="d-flex m-0 fw-normal">
                             <div class="item-img d-flex justify-content-center align-items-center" style="width:25px;height:25px;">
-                                <img class="w-100" src="../assets/img/shop-image/software/microsoft-office.png" alt="Image Of Microsoft Office 2019">
+                                <img class="w-100" src="../assets/img/shop-image/software/microsoft-office.png" alt="">
                             </div>
                             <p class="m-0 text-black ms-2">Microsoft Office 2019</p>
                         </div>
                     </div>
-                    <div class="col-2 text-center">
+                    <div class="col-2 text-center d-none d-md-grid">
                         <p class="m-0 text-black fw-normal" style="color:#6084a4;">₱100.00</p>
                     </div>
-                    <div class="col-2 text-center">
+                    <div class="col-2 text-center d-none d-md-grid">
                         <p class="m-0 text-black fw-normal" style="color:#6084a4;">1</p>
                     </div>
-                    <div class="col text-right">
+                    <div class="col text-right d-none d-md-grid">
                         <p class="m-0 text-black fw-normal" style="color:#6084a4;">₱100.00</p>
                     </div>
                 </div>
@@ -158,9 +206,10 @@
     <!-- Payment method -->
     <div class="main-container mb-5" style="margin-top:0;z-index:100;">
         <div class="container">
-            <div class="bg-white m-0 py-4 px-4 d-flex" style="box-shadow: 1px 1px 10px rgba(0,102,102,0.2);user-select: none;">
-                <div class="d-flex flex-column w-50 me-5">
-                    <h5 class="m-0 mb-4">Payment Method</h5>
+            <div class="bg-white m-0 py-4 px-4 d-flex flex-column flex-md-row row-cols-md-2" style="box-shadow: 1px 1px 10px rgba(0,102,102,0.2);user-select: none;">
+                <div class="d-flex flex-column pe-md-4 mb-5 mb-md-0 me-0 col-md p-0">
+                    <h5 class="m-0 mb-4 d-none d-md-block">Payment Method</h5>
+                    <h6 class="m-0 mb-4 d-md-none">Payment Method</h6>
                     <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
                         <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
                         <label class="btn btn-outline-secondary" for="vbtn-radio1">
@@ -179,8 +228,9 @@
                         </label>
                     </div>
                 </div>
-                <div class="w-50 d-flex flex-column">
-                    <h5 class="m-0 mb-3">Order Summary</h5>
+                <div class="d-flex flex-column col-md p-0">
+                    <h5 class="m-0 mb-3 d-none d-md-block">Order Summary</h5>
+                    <h6 class="m-0 mb-3 d-md-none">Order Summary</h6>
                     <div class="d-flex flex-column">
                         <div class="d-flex justify-content-between mb-2">
                             <p class="text-black m-0">Subtotal:</p>
@@ -195,8 +245,8 @@
                             <h4 class="m-0 text-success fw-bold">₱100.00</h4>
                         </div>
                     </div>
-                    <div class="text-right">
-                        <button class="btn btn-primary">Place Order</button>
+                    <div class="text-center text-md-end">
+                        <button class="btn btn-primary d-block d-md-inline col col-md-auto">Place Order</button>
                     </div>
                 </div>
             </div>
@@ -220,6 +270,14 @@
                                 <label for="fullNameInput" class="form-label fw-normal">Full Name</label>
                             </div>
                         </div>
+                        <div class="col d-none d-md-grid">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="phoneNumberInput" placeholder="Enter phone number" required>
+                                <label for="phoneNumberInput" class="form-label fw-normal">Phone Number</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2 d-md-none">
                         <div class="col">
                             <div class="form-floating">
                                 <input type="text" class="form-control" id="phoneNumberInput" placeholder="Enter phone number" required>
@@ -230,7 +288,7 @@
                     <div class="row mb-2">
                         <div class="col">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="addressInput" placeholder="" required>
+                                <input type="text" class="form-control" id="addressInput" placeholder="e.g. I, Leyte, Ormoc, Brgy. Linao" required>
                                 <label for="addressInput" class="form-label fw-normal">Region, Province, City, Barangay</label>
                             </div>
                         </div>
@@ -238,7 +296,7 @@
                     <div class="row mb-2">
                         <div class="col">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="postalCodeInput" placeholder="" required>
+                                <input type="text" class="form-control" id="postalCodeInput" placeholder="e.g. 1234" required>
                                 <label for="postalCodeInput" class="form-label fw-normal">Postal Code</label>
                             </div>
                         </div>
@@ -246,7 +304,7 @@
                     <div class="row mb-2">
                         <div class="col">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="streetAddressInput" placeholder="" required>
+                                <input type="text" class="form-control" id="streetAddressInput" placeholder="e.g. 12th Street, No. 1, 123" required>
                                 <label for="streetAddressInput" class="form-label fw-normal">Street Name, Building, House No.</label>
                             </div>
                         </div>
