@@ -26,7 +26,7 @@ namespace Future_Craft_Digital_02
                       "~/Scripts/js/main.js",
                       "~/Scripts/js/owl.carousel.min.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
+            bundles.Add(new StyleBundle("~/Content/css/FCD").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/css/styles.css",
                       "~/Content/css/slick.css",
